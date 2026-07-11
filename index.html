@@ -91,7 +91,8 @@
   .service p{font-size:14px;color:var(--ink-dim);}
 
   .work-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px;}
-  .work-card{background:var(--bg-alt);border:1px solid var(--line);}
+  .work-card{background:var(--bg-alt);border:1px solid var(--line);cursor:pointer;}
+  .work-card:hover{border-color:var(--gold);}
   .work-thumb{
     height:180px;
     background:linear-gradient(135deg,#2a2a2c,#1a1a1c);
@@ -128,7 +129,39 @@
     .services,.work-grid{grid-template-columns:1fr;}
     .section-head{flex-direction:column;align-items:flex-start;gap:8px;}
   }
+
+  /* Lightbox */
+  .lightbox{
+    display:none;
+    position:fixed;inset:0;z-index:100;
+    background:rgba(6,6,7,0.92);
+    padding:5vh 5vw;
+    overflow:auto;
+  }
+  .lightbox.open{display:flex;align-items:flex-start;justify-content:center;}
+  .lightbox-inner{
+    max-width:1000px;width:100%;
+    background:var(--bg-alt);border:1px solid var(--line);
+    margin:auto;
+  }
+  .lightbox-head{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:16px 20px;border-bottom:1px solid var(--line);
+    position:sticky;top:0;background:var(--bg-alt);
+  }
+  .lightbox-head h4{font-size:15px;font-weight:500;}
+  .lightbox-close{
+    background:none;border:1px solid var(--line);color:var(--ink);
+    width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .lightbox-close:hover{border-color:var(--gold);color:var(--gold);}
+  .lightbox-body{padding:0;}
+  .lightbox-body img{width:100%;height:auto;display:block;}
+  .lightbox-body iframe{width:100%;height:80vh;border:none;display:block;}
+  body.lock{overflow:hidden;}
 </style>
+
 </head>
 <body>
 
@@ -179,51 +212,51 @@
     <div class="tag">grouped by category</div>
   </div>
   <div class="work-grid">
-    <div class="work-card featured">
+    <div class="work-card featured" data-type="pdf" data-src="./work/newspaper-layout.pdf" data-title="Division Schools Press Conference — 4th Place, Newspaper Layout">
       <div class="work-thumb">🏆 newspaper layout</div>
       <div class="work-info">
         <div class="cat">Layout Design</div>
         <h4>Division Schools Press Conference — 4th Place, Newspaper Layout</h4>
-        <a class="work-link" href="./work/newspaper-layout.pdf" target="_blank">View full layout (PDF) →</a>
+        <a class="work-link" href="./work/newspaper-layout.pdf" target="_blank" onclick="event.stopPropagation()">Open in new tab →</a>
       </div>
     </div>
-    <div class="work-card featured">
+    <div class="work-card featured" data-type="pdf" data-src="./work/web-publishing.pdf" data-title="Division Schools Press Conference 2025 — 6th Place, Online Web Publishing">
       <div class="work-thumb">🏆 web publishing</div>
       <div class="work-info">
         <div class="cat">Layout Design</div>
         <h4>Division Schools Press Conference 2025 — 6th Place, Online Web Publishing</h4>
-        <a class="work-link" href="./work/web-publishing.pdf" target="_blank">View full layout (PDF) →</a>
+        <a class="work-link" href="./work/web-publishing.pdf" target="_blank" onclick="event.stopPropagation()">Open in new tab →</a>
       </div>
     </div>
-    <div class="work-card">
+    <div class="work-card" data-type="image" data-src="./work-images/buwan-ng-wika.png" data-title="Buwan ng Wika 2025 — Campaign Poster">
       <div class="work-thumb"><img src="./work-images/buwan-ng-wika.png" alt="Buwan ng Wika 2025 poster"></div>
       <div class="work-info">
         <div class="cat">Graphic Design</div>
         <h4>Buwan ng Wika 2025 — Campaign Poster</h4>
       </div>
     </div>
-    <div class="work-card">
+    <div class="work-card" data-type="image" data-src="./work-images/bonifacio-day.png" data-title="Bonifacio Day — Commemorative Poster">
       <div class="work-thumb"><img src="./work-images/bonifacio-day.png" alt="Bonifacio Day poster"></div>
       <div class="work-info">
         <div class="cat">Graphic Design</div>
         <h4>Bonifacio Day — Commemorative Poster</h4>
       </div>
     </div>
-    <div class="work-card">
+    <div class="work-card" data-type="image" data-src="./work-images/happy-new-year.png" data-title="Happy New Year 2026 — Org Greeting Poster">
       <div class="work-thumb"><img src="./work-images/happy-new-year.png" alt="Happy New Year 2026 poster"></div>
       <div class="work-info">
         <div class="cat">Graphic Design</div>
         <h4>Happy New Year 2026 — Org Greeting Poster</h4>
       </div>
     </div>
-    <div class="work-card">
+    <div class="work-card" data-type="image" data-src="./work-images/ber-months.png" data-title="Hello, BER Months! — Seasonal Engagement Poster">
       <div class="work-thumb"><img src="./work-images/ber-months.png" alt="Hello BER Months poster"></div>
       <div class="work-info">
         <div class="cat">Graphic Design</div>
         <h4>Hello, BER Months! — Seasonal Engagement Poster</h4>
       </div>
     </div>
-    <div class="work-card">
+    <div class="work-card" data-type="image" data-src="./work-images/yearn-learn.png" data-title="Yearn, Learn — Midterms Engagement Poster">
       <div class="work-thumb"><img src="./work-images/yearn-learn.png" alt="Yearn Learn midterms poster"></div>
       <div class="work-info">
         <div class="cat">Graphic Design</div>
@@ -257,6 +290,16 @@
   <div><a href="https://facebook.com/jarrell.creative" target="_blank">Facebook</a> &nbsp;·&nbsp; <a href="mailto:jajillmarante@gmail.com">Email</a></div>
 </footer>
 
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-inner">
+    <div class="lightbox-head">
+      <h4 id="lightboxTitle"></h4>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    </div>
+    <div class="lightbox-body" id="lightboxBody"></div>
+  </div>
+</div>
+
 <script>
   const scrubber = document.getElementById('heroScrubber');
   for(let i=0;i<48;i++){
@@ -264,6 +307,48 @@
     if(i===14) s.classList.add('active');
     scrubber.appendChild(s);
   }
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxBody = document.getElementById('lightboxBody');
+  const lightboxTitle = document.getElementById('lightboxTitle');
+  const lightboxClose = document.getElementById('lightboxClose');
+
+  function openLightbox(type, src, title){
+    lightboxTitle.textContent = title || '';
+    lightboxBody.innerHTML = '';
+    if(type === 'pdf'){
+      const iframe = document.createElement('iframe');
+      iframe.src = src;
+      lightboxBody.appendChild(iframe);
+    } else {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = title || '';
+      lightboxBody.appendChild(img);
+    }
+    lightbox.classList.add('open');
+    document.body.classList.add('lock');
+  }
+
+  function closeLightbox(){
+    lightbox.classList.remove('open');
+    document.body.classList.remove('lock');
+    lightboxBody.innerHTML = '';
+  }
+
+  document.querySelectorAll('.work-card[data-type]').forEach(card => {
+    card.addEventListener('click', () => {
+      openLightbox(card.dataset.type, card.dataset.src, card.dataset.title);
+    });
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => {
+    if(e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') closeLightbox();
+  });
 </script>
 
 </body>
