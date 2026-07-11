@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio Mockup — Black Minimalist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0E0E10;
+    --bg-alt:#161618;
+    --ink:#F2EFEA;
+    --ink-dim:#8C8A87;
+    --gold:#D9A441;
+    --teal:#3A6B63;
+    --line:#2A2A2C;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.5;
+  }
+  h1,h2,h3,.display{font-family:'Space Grotesk',sans-serif;}
+
+  /* Timeline scrubber signature element */
+  .scrubber{
+    display:flex;
+    align-items:center;
+    gap:2px;
+    height:14px;
+    margin:0 auto;
+  }
+  .scrubber span{
+    flex:1;
+    height:6px;
+    background:var(--line);
+  }
+  .scrubber span:nth-child(4n){height:14px;background:var(--ink-dim);}
+  .scrubber span.active{background:var(--gold);height:14px;}
+
+  nav{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:28px 6vw;
+    border-bottom:1px solid var(--line);
+  }
+  .brand{font-size:20px;font-weight:600;letter-spacing:-0.02em;}
+  .brand span{color:var(--gold);}
+  .navlinks{display:flex;gap:32px;font-size:14px;color:var(--ink-dim);}
+  .navlinks a{color:inherit;text-decoration:none;}
+  .navlinks a:hover{color:var(--ink);}
+
+  .hero{
+    padding:100px 6vw 70px;
+    max-width:900px;
+  }
+  .eyebrow{
+    font-size:13px;color:var(--gold);letter-spacing:0.08em;text-transform:uppercase;
+    margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:clamp(38px,6vw,64px);
+    font-weight:700;
+    letter-spacing:-0.03em;
+    line-height:1.05;
+    margin-bottom:22px;
+  }
+  .hero p{
+    font-size:18px;color:var(--ink-dim);max-width:520px;margin-bottom:36px;
+  }
+  .cta{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--gold);color:#0E0E10;
+    padding:14px 26px;border-radius:2px;
+    font-weight:600;font-size:15px;text-decoration:none;
+  }
+
+  .hero-scrubber{margin-top:64px;}
+
+  section{padding:70px 6vw;border-bottom:1px solid var(--line);}
+  .section-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:40px;}
+  .section-head h2{font-size:28px;letter-spacing:-0.02em;}
+  .section-head .tag{font-size:13px;color:var(--ink-dim);}
+
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);}
+  .service{background:var(--bg);padding:32px;}
+  .service .num{font-size:13px;color:var(--gold);margin-bottom:16px;}
+  .service h3{font-size:20px;margin-bottom:10px;}
+  .service p{font-size:14px;color:var(--ink-dim);}
+
+  .work-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px;}
+  .work-card{background:var(--bg-alt);border:1px solid var(--line);cursor:pointer;}
+  .work-card:hover{border-color:var(--gold);}
+  .work-thumb{
+    height:180px;
+    background:linear-gradient(135deg,#2a2a2c,#1a1a1c);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--ink-dim);font-size:13px;
+    overflow:hidden;
+  }
+  .work-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .work-info{padding:16px;}
+  .work-info .cat{font-size:11px;color:var(--teal);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px;}
+  .work-info h4{font-size:15px;font-weight:500;}
+  .work-card.featured .work-thumb{background:linear-gradient(135deg,#3a2f1a,#0E0E10);color:var(--gold);}
+  .work-card.featured .cat{color:var(--gold);}
+  .work-link{
+    display:inline-block;margin-top:10px;font-size:12px;color:var(--gold);
+    text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:1px;
+  }
+  .work-link:hover{opacity:0.75;}
+
+  .credentials{display:flex;flex-wrap:wrap;gap:16px;}
+  .credential{
+    border:1px solid var(--line);padding:16px 20px;
+    font-size:14px;color:var(--ink-dim);flex:1;min-width:220px;
+  }
+  .credential strong{display:block;color:var(--ink);font-size:15px;margin-bottom:4px;}
+
+  footer{
+    padding:50px 6vw;display:flex;justify-content:space-between;align-items:center;
+    font-size:14px;color:var(--ink-dim);
+  }
+  footer a{color:var(--ink);text-decoration:none;}
+
+  @media(max-width:700px){
+    .services,.work-grid{grid-template-columns:1fr;}
+    .section-head{flex-direction:column;align-items:flex-start;gap:8px;}
+  }
+
+  /* Lightbox */
+  .lightbox{
+    display:none;
+    position:fixed;inset:0;z-index:100;
+    background:rgba(6,6,7,0.92);
+    padding:5vh 5vw;
+    overflow:auto;
+  }
+  .lightbox.open{display:flex;align-items:flex-start;justify-content:center;}
+  .lightbox-inner{
+    max-width:1000px;width:100%;
+    background:var(--bg-alt);border:1px solid var(--line);
+    margin:auto;
+  }
+  .lightbox-head{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:16px 20px;border-bottom:1px solid var(--line);
+    position:sticky;top:0;background:var(--bg-alt);
+  }
+  .lightbox-head h4{font-size:15px;font-weight:500;}
+  .lightbox-close{
+    background:none;border:1px solid var(--line);color:var(--ink);
+    width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .lightbox-close:hover{border-color:var(--gold);color:var(--gold);}
+  .lightbox-body{padding:0;}
+  .lightbox-body img{width:100%;height:auto;display:block;}
+  .lightbox-body iframe{width:100%;height:80vh;border:none;display:block;}
+  body.lock{overflow:hidden;}
+</style>
+
+</head>
+<body>
+
+<nav>
+  <div class="brand">Jarrell<span>.</span></div>
+  <div class="navlinks">
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="eyebrow">Design · Edit · Stream</div>
+  <h1>I build the visuals<br>behind the moment.</h1>
+  <p>Graphic design, video editing, and livestream setup for events, orgs, and small businesses — clean work, fast turnaround.</p>
+  <a class="cta" href="#contact">Get a quote →</a>
+  <div class="hero-scrubber scrubber" id="heroScrubber"></div>
+</div>
+
+<section id="services">
+  <div class="section-head">
+    <h2>What I do</h2>
+    <div class="tag">03 services</div>
+  </div>
+  <div class="services">
+    <div class="service">
+      <div class="num">01</div>
+      <h3>Graphic Design</h3>
+      <p>Posters, layouts, event materials, social media graphics — built in Canva & Photoshop.</p>
+    </div>
+    <div class="service">
+      <div class="num">02</div>
+      <h3>Video Editing</h3>
+      <p>Highlight reels, promo videos, social edits — Premiere Pro & CapCut.</p>
+    </div>
+    <div class="service">
+      <div class="num">03</div>
+      <h3>Livestream Setup</h3>
+      <p>OBS configuration and technical setup for events, church services, and gaming streams.</p>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="section-head">
+    <h2>Selected work</h2>
+    <div class="tag">grouped by category</div>
+  </div>
+  <div class="work-grid">
+    <div class="work-card featured" data-type="pdf" data-src="./work/newspaper-layout.pdf" data-title="Division Schools Press Conference — 4th Place, Newspaper Layout">
+      <div class="work-thumb">🏆 newspaper layout</div>
+      <div class="work-info">
+        <div class="cat">Layout Design</div>
+        <h4>Division Schools Press Conference — 4th Place, Newspaper Layout</h4>
+        <a class="work-link" href="./work/newspaper-layout.pdf" target="_blank" onclick="event.stopPropagation()">Open in new tab →</a>
+      </div>
+    </div>
+    <div class="work-card featured" data-type="pdf" data-src="./work/web-publishing.pdf" data-title="Division Schools Press Conference 2025 — 6th Place, Online Web Publishing">
+      <div class="work-thumb">🏆 web publishing</div>
+      <div class="work-info">
+        <div class="cat">Layout Design</div>
+        <h4>Division Schools Press Conference 2025 — 6th Place, Online Web Publishing</h4>
+        <a class="work-link" href="./work/web-publishing.pdf" target="_blank" onclick="event.stopPropagation()">Open in new tab →</a>
+      </div>
+    </div>
+    <div class="work-card" data-type="image" data-src="./work-images/ber-months.png" data-title="Buwan ng Wika 2025 — Campaign Poster">
+      <div class="work-thumb"><img src="./work-images/ber-months.png" alt="Buwan ng Wika 2025 poster"></div>
+      <div class="work-info">
+        <div class="cat">Graphic Design</div>
+        <h4>Buwan ng Wika 2025 — Campaign Poster</h4>
+      </div>
+    </div>
+    <div class="work-card" data-type="image" data-src="./work-images/happy-new-year.png" data-title="Bonifacio Day — Commemorative Poster">
+      <div class="work-thumb"><img src="./work-images/happy-new-year.png" alt="Bonifacio Day poster"></div>
+      <div class="work-info">
+        <div class="cat">Graphic Design</div>
+        <h4>Bonifacio Day — Commemorative Poster</h4>
+      </div>
+    </div>
+    <div class="work-card" data-type="image" data-src="./work-images/yearn-learn.png" data-title="Happy New Year 2026 — Org Greeting Poster">
+      <div class="work-thumb"><img src="./work-images/yearn-learn.png" alt="Happy New Year 2026 poster"></div>
+      <div class="work-info">
+        <div class="cat">Graphic Design</div>
+        <h4>Happy New Year 2026 — Org Greeting Poster</h4>
+      </div>
+    </div>
+    <div class="work-card" data-type="image" data-src="./work-images/bonifacio-day.png" data-title="Hello, BER Months! — Seasonal Engagement Poster">
+      <div class="work-thumb"><img src="./work-images/bonifacio-day.png" alt="Hello BER Months poster"></div>
+      <div class="work-info">
+        <div class="cat">Graphic Design</div>
+        <h4>Hello, BER Months! — Seasonal Engagement Poster</h4>
+      </div>
+    </div>
+    <div class="work-card" data-type="image" data-src="./work-images/buwan-ng-wika.png" data-title="Yearn, Learn — Midterms Engagement Poster">
+      <div class="work-thumb"><img src="./work-images/buwan-ng-wika.png" alt="Yearn Learn midterms poster"></div>
+      <div class="work-info">
+        <div class="cat">Graphic Design</div>
+        <h4>Yearn, Learn — Midterms Engagement Poster</h4>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-thumb">video thumbnail</div>
+      <div class="work-info">
+        <div class="cat">Video Editing</div>
+        <h4>School Org Event Recap — Highlight Edit</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <h2>Credentials</h2>
+  </div>
+  <div class="credentials">
+    <div class="credential"><strong>4th Place, Newspaper Layout (Filipino)</strong>Division Schools Press Conference</div>
+    <div class="credential"><strong>6th Place, Online Web Publishing (Filipino)</strong>Division Schools Press Conference 2025</div>
+    <div class="credential"><strong>AI & VA Seminar Training</strong>Certificate, 2026</div>
+    <div class="credential"><strong>2+ years</strong>Designing for school events & community programs</div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div>Based in the Philippines — available for local & remote work</div>
+  <div><a href="https://facebook.com/jarrell.creative" target="_blank">Facebook</a> &nbsp;·&nbsp; <a href="mailto:jajillmarante@gmail.com">Email</a></div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-inner">
+    <div class="lightbox-head">
+      <h4 id="lightboxTitle"></h4>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    </div>
+    <div class="lightbox-body" id="lightboxBody"></div>
+  </div>
+</div>
+
+<script>
+  const scrubber = document.getElementById('heroScrubber');
+  for(let i=0;i<48;i++){
+    const s=document.createElement('span');
+    if(i===14) s.classList.add('active');
+    scrubber.appendChild(s);
+  }
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxBody = document.getElementById('lightboxBody');
+  const lightboxTitle = document.getElementById('lightboxTitle');
+  const lightboxClose = document.getElementById('lightboxClose');
+
+  function openLightbox(type, src, title){
+    lightboxTitle.textContent = title || '';
+    lightboxBody.innerHTML = '';
+    if(type === 'pdf'){
+      const iframe = document.createElement('iframe');
+      iframe.src = src;
+      lightboxBody.appendChild(iframe);
+    } else {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = title || '';
+      lightboxBody.appendChild(img);
+    }
+    lightbox.classList.add('open');
+    document.body.classList.add('lock');
+  }
+
+  function closeLightbox(){
+    lightbox.classList.remove('open');
+    document.body.classList.remove('lock');
+    lightboxBody.innerHTML = '';
+  }
+
+  document.querySelectorAll('.work-card[data-type]').forEach(card => {
+    card.addEventListener('click', () => {
+      openLightbox(card.dataset.type, card.dataset.src, card.dataset.title);
+    });
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => {
+    if(e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') closeLightbox();
+  });
+</script>
+
+</body>
+</html>
