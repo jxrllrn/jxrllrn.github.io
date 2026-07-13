@@ -17,6 +17,7 @@
     --line:#2A2A2C;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
   body{
     background:var(--bg);
     color:var(--ink);
@@ -24,6 +25,17 @@
     line-height:1.5;
   }
   h1,h2,h3,.display{font-family:'Space Grotesk',sans-serif;}
+
+  @keyframes highlightBlink{
+    0%,100%{background:transparent;color:inherit;}
+    50%{background:var(--gold);color:#0E0E10;}
+  }
+  .blink-highlight{
+    animation:highlightBlink 0.5s ease-in-out 5;
+    border-radius:3px;
+    padding:2px 6px;
+    margin:-2px -6px;
+  }
 
   /* Timeline scrubber signature element */
   .scrubber{
@@ -170,7 +182,7 @@
   <div class="navlinks">
     <a href="#work">Work</a>
     <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+    <a href="#contact" id="navContact">Contact</a>
   </div>
 </nav>
 
@@ -299,7 +311,7 @@
     <h2>Credentials</h2>
   </div>
   <div class="credentials">
-    <div class="credential"><strong>4th Place, Newspaper Layout (Filipino)</strong>Division Schools Press Conference 2025 · <a class="work-link" href="./work-images/newspaper-layout-certificate.png" target="_blank" style="margin-top:6px;">View certificate →</a></div>
+ <div class="credential"><strong>4th Place, Newspaper Layout (Filipino)</strong>Division Schools Press Conference 2025 · <a class="work-link" href="./work-images/newspaper-layout-certificate.png" target="_blank" style="margin-top:6px;">View certificate →</a></div>
     <div class="credential"><strong>6th Place, Online Web Publishing (Filipino)</strong>Division Schools Press Conference 2025 · <a class="work-link" href="./work-images/web-publishing-proof.png" target="_blank" style="margin-top:6px;">View certificate →</a></div>
     <div class="credential"><strong>AI & VA Seminar Training</strong>Wired VA and Artificial Itelligence Seminar, 2026 · <a class="work-link" href="./work-images/ai-va-seminar-certificate.png" target="_blank" style="margin-top:6px;">View certificate →</a></div>
     <div class="credential"><strong>2+ years</strong>Designing for school events & community programs</div>
@@ -308,7 +320,7 @@
 
 <footer id="contact">
   <div>Based in the Philippines — available for local & remote work</div>
-  <div><a href="https://www.facebook.com/jxrllrn" target="_blank">Facebook</a> &nbsp;·&nbsp; jajillmarante@gmail.com</div>
+  <div><a href="https://www.facebook.com/jxrllrn" target="_blank" id="fbContactLink">Facebook</a> &nbsp;·&nbsp; <span id="emailContactText">jajillmarante@gmail.com</span></div>
 </footer>
 
 <div class="lightbox" id="lightbox">
@@ -322,6 +334,20 @@
 </div>
 
 <script>
+  document.getElementById('navContact').addEventListener('click', () => {
+    const fb = document.getElementById('fbContactLink');
+    const email = document.getElementById('emailContactText');
+    [fb, email].forEach(el => {
+      el.classList.remove('blink-highlight');
+      void el.offsetWidth; // restart animation
+      el.classList.add('blink-highlight');
+    });
+    setTimeout(() => {
+      fb.classList.remove('blink-highlight');
+      email.classList.remove('blink-highlight');
+    }, 2600);
+  });
+
   const scrubber = document.getElementById('heroScrubber');
   for(let i=0;i<48;i++){
     const s=document.createElement('span');
