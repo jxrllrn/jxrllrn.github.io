@@ -277,11 +277,18 @@
         <h4>Search for Mr. & Mrs. Senior 2026 — Candidate Lineup Poster</h4>
       </div>
     </div>
-    <div class="work-card">
-      <div class="work-thumb">video thumbnail</div>
+    <div class="work-card" data-type="video" data-src="https://www.youtube.com/embed/HAT8vXljYAM" data-title="School Org Event Recap — Highlight Edit">
+      <div class="work-thumb"><img src="https://img.youtube.com/vi/HAT8vXljYAM/hqdefault.jpg" alt="School Org Event Recap video thumbnail"></div>
       <div class="work-info">
         <div class="cat">Video Editing</div>
         <h4>School Org Event Recap — Highlight Edit</h4>
+      </div>
+    </div>
+    <div class="work-card" data-type="video" data-src="https://www.youtube.com/embed/GthoIXKykUs" data-title="Valorant Gaming Edit — Portfolio">
+      <div class="work-thumb"><img src="https://img.youtube.com/vi/GthoIXKykUs/hqdefault.jpg" alt="Valorant gaming edit video thumbnail"></div>
+      <div class="work-info">
+        <div class="cat">Video Editing</div>
+        <h4>Valorant Gaming Edit — Portfolio</h4>
       </div>
     </div>
   </div>
@@ -333,6 +340,15 @@
     if(type === 'pdf'){
       const iframe = document.createElement('iframe');
       iframe.src = src;
+      lightboxBody.appendChild(iframe);
+    } else if(type === 'video'){
+      const iframe = document.createElement('iframe');
+      iframe.src = src;
+      iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.style.aspectRatio = '16/9';
+      iframe.style.height = 'auto';
+      iframe.style.display = 'block';
       lightboxBody.appendChild(iframe);
     } else {
       const img = document.createElement('img');
