@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>JX Creative Studio — Design · Edit · Stream</title>
+<title>JX Creative Studio — Jarrell Arante | Graphic Design, Video Editing & VA Support</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -272,7 +272,15 @@
   }
   .about-copy h2{font-size:clamp(26px,3.2vw,40px);font-weight:800;letter-spacing:-0.025em;margin:14px 0 18px;}
   .about-copy p{font-size:16px;color:var(--ice-dim);max-width:560px;line-height:1.7;}
+  .about-facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;}
+  .about-facts .fact{
+    display:flex;align-items:center;gap:8px;
+    padding:9px 16px;border-radius:999px;
+    font-size:12.5px;color:var(--ice-dim);
+  }
+  .about-facts .fact strong{color:var(--ice);font-weight:600;}
   @media(max-width:820px){
+    .about-facts{justify-content:center;}
     .about-grid{grid-template-columns:1fr;}
     .about-photo{width:220px;height:270px;margin:0 auto;}
     .about-copy{text-align:center;}
@@ -291,7 +299,7 @@
   .section-head p{color:var(--ice-dim);font-size:16px;}
 
   /* ---------- Services (expand/flip cards) ---------- */
-  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
   .svc-card{
     perspective:1400px;height:340px;cursor:pointer;
   }
@@ -425,7 +433,7 @@
   }
 
   /* ---------- Credentials ---------- */
-  .cred-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .cred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
   .cred-card{padding:26px;position:relative;overflow:hidden;}
   .cred-card::before{
     content:"";position:absolute;top:-40%;right:-40%;width:160px;height:160px;border-radius:50%;
@@ -497,7 +505,7 @@
 <div class="topbar">
   <div class="brand">
     <div class="mark-photo"><img src="./assets/jarrell-arante.png" alt="Jarrell Arante"></div>
-    <span>JX Creative Studio<span class="full"> — Design · Edit · Stream</span></span>
+    <span>JX Creative Studio<span class="full"> — Design · Edit · Stream · VA Support</span></span>
   </div>
   <a class="top-cta glass btn-ghost" href="#contact">Get a quote</a>
 </div>
@@ -509,7 +517,7 @@
       <div>
         <div class="eyebrow glass"><span class="pulse"></span>Now booking Q3 projects</div>
         <h1>Premium visuals,<br>built for the <span class="accent">moment</span>.</h1>
-        <p>JX Creative Studio designs, edits, and streams for events, organizations, and brands that need work to feel high-value — not homemade.</p>
+        <p>JX Creative Studio designs, edits, streams, and provides WIRED-certified virtual assistant support for events, organizations, and brands that need work to feel high-value — not homemade.</p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="#contact"><span class="btn-glow"></span>Start a project →</a>
           <a class="btn btn-ghost glass" href="#work"><span class="btn-glow"></span>View selected work</a>
@@ -545,7 +553,14 @@
       <div class="about-copy reveal">
         <span class="kicker">About me</span>
         <h2>The person behind the studio.</h2>
-        <p>I am Jarrell Arante, a digital creator with a focus on graphic design, digital layout, video editing, and other skills. I enjoy blending technical problem-solving with visual storytelling to build engaging, high-quality digital experiences.</p>
+        <p>I am Jarrell Arante, an Information and Communication Technology graduate and digital creator specializing in graphic design, video editing, livestream engineering, and virtual assistant support. I run JX Creative Studio, where I deliver polished creative assets alongside reliable, detail-oriented administrative and digital operations support — a combination shaped by hands-on experience in both creative production and corporate office work.</p>
+        <p>Beyond the studio, I hold a Certificate of Completion from the WIRED 7-Session VA Bootcamp, and I'm a With High Honors graduate ready to bring the same discipline to client work as I do to academics.</p>
+        <div class="about-facts">
+          <div class="fact glass">📍 <strong>San Pedro, Laguna, PH</strong></div>
+          <div class="fact glass">🗣️ <strong>English & Filipino</strong>, fluent</div>
+          <div class="fact glass">🎓 <strong>With High Honors</strong>, Grade 12</div>
+          <div class="fact glass">✅ <strong>WIRED VA Bootcamp</strong> certified</div>
+        </div>
       </div>
     </div>
   </section>
@@ -618,6 +633,28 @@
               <li><span class="n">02</span>Scene, overlay & audio routing build</li>
               <li><span class="n">03</span>Dry-run test stream</li>
               <li><span class="n">04</span>Live day support & monitoring</li>
+            </ul>
+            <div class="svc-back-hint">← click to flip back</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="svc-card reveal" data-idx="3">
+        <div class="svc-inner">
+          <div class="svc-face front glass">
+            <div class="svc-num">04</div>
+            <div class="svc-icon">🗂️</div>
+            <h3>Virtual Assistant Support</h3>
+            <p>WIRED-certified virtual assistance covering file & record management, data entry, document organization, and day-to-day admin coordination — trained for client-readiness, not just tasks.</p>
+            <div class="svc-flip-hint">See the process →</div>
+          </div>
+          <div class="svc-face back glass">
+            <h4>How it runs</h4>
+            <ul class="svc-steps">
+              <li><span class="n">01</span>Workflow & tools intake</li>
+              <li><span class="n">02</span>System / folder & tracker setup</li>
+              <li><span class="n">03</span>Daily or weekly task turnaround</li>
+              <li><span class="n">04</span>Async status updates & handoff notes</li>
             </ul>
             <div class="svc-back-hint">← click to flip back</div>
           </div>
@@ -786,6 +823,15 @@
         <a class="cred-link" href="./assets/work/newspaper-layout.pdf" target="_blank">View certificate →</a>
       </div>
       <div class="cred-card glass reveal">
+        <strong>WIRED VA Bootcamp — Certificate of Completion</strong>
+        <p>7-session Virtual Assistant Bootcamp covering digital skills, communication & client-readiness</p>
+        <a class="cred-link" href="./assets/credentials/wired-va-bootcamp-certificate.pdf" target="_blank">View certificate →</a>
+      </div>
+      <div class="cred-card glass reveal">
+        <strong>ICT Graduate — With High Honors</strong>
+        <p>IETI College of Science and Technology, San Pedro City, Laguna (2024–2026)</p>
+      </div>
+      <div class="cred-card glass reveal">
         <strong>2+ years active</strong>
         <p>Designing for school events, community programs & organizations</p>
       </div>
@@ -795,17 +841,18 @@
   <section id="contact">
     <div class="contact-card glass reveal">
       <h2>Let's build something that looks expensive.</h2>
-      <p>Tell us what you're working on — poster, edit, or livestream — and we'll get back to you within a day.</p>
+      <p>Tell us what you're working on — poster, edit, livestream, or ongoing VA support — and we'll get back to you within a day.</p>
       <div class="contact-links">
         <a class="btn btn-primary" href="mailto:jajillmarante@gmail.com"><span class="btn-glow"></span>Email us →</a>
         <a class="btn btn-ghost glass" href="https://www.facebook.com/profile.php?id=61591908333417" target="_blank"><span class="btn-glow"></span>Message on Facebook</a>
+        <a class="btn btn-ghost glass" href="./assets/Jarrell-Arante-Resume.pdf" target="_blank"><span class="btn-glow"></span>Download resume ↓</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <div>© 2026 JX Creative Studio — Based in the Philippines, available for local & remote work</div>
-    <div><a href="https://www.facebook.com/profile.php?id=61591908333417" target="_blank">Facebook</a> &nbsp;·&nbsp; <span>jajillmarante@gmail.com</span></div>
+    <div>© 2026 JX Creative Studio — San Pedro, Laguna, Philippines, available for local & remote work</div>
+    <div><a href="https://www.facebook.com/profile.php?id=61591908333417" target="_blank">Facebook</a> &nbsp;·&nbsp; <span>jajillmarante@gmail.com</span> &nbsp;·&nbsp; <span>0994 257 3758</span></div>
   </footer>
 
 </main>
