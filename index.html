@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>JX Creative Studio — Jarrell Arante | Graphic Design, Video Editing & VA Support</title>
+<title>Jarrell Arante | Social Media Graphic Designer & Video Editor</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jarrell Arante creates social-media graphics, event visuals, and short-form videos for businesses and organizations. View selected work and get in touch.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -37,6 +38,7 @@
   h1,h2,h3,.display{font-family:'Manrope',sans-serif;}
   .mono{font-family:'JetBrains Mono',monospace;}
   a{color:inherit;}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:4px;}
   ::selection{background:var(--gold);color:var(--obsidian);}
 
   @media (prefers-reduced-motion: reduce){
@@ -372,27 +374,10 @@
   .work-info .cat{font-size:11px;color:var(--teal);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:6px;}
   .work-info h4{font-size:14.5px;font-weight:600;line-height:1.35;}
 
-  /* ---------- Tools marquee ---------- */
-  .tools-wrap{overflow:hidden;position:relative;padding:32px 0;}
-  .tools-wrap::before,.tools-wrap::after{
-    content:"";position:absolute;top:0;bottom:0;width:120px;z-index:2;
-  }
-  .tools-wrap::before{left:0;background:linear-gradient(90deg, var(--obsidian), transparent);}
-  .tools-wrap::after{right:0;background:linear-gradient(270deg, var(--obsidian), transparent);}
-  .tools-track{display:flex;gap:16px;width:max-content;animation:scroll-x 28s linear infinite;}
-  .tools-wrap:hover .tools-track{animation-play-state:paused;}
-  .tool-pill{
-    display:flex;align-items:center;gap:12px;
-    padding:16px 24px;white-space:nowrap;
-  }
-  .tool-pill .tool-mark{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--gold);}
-  .tool-pill h4{font-size:14px;font-weight:600;}
-  @keyframes scroll-x{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
-
   /* ---------- Tools icon grid (logos) ---------- */
   .tools-icon-grid{
     display:grid;
-    grid-template-columns:repeat(5,1fr);
+    grid-template-columns:repeat(3,1fr);
     gap:18px;
     margin-top:28px;
   }
@@ -442,6 +427,8 @@
   .cred-card strong{display:block;font-size:16px;margin-bottom:8px;position:relative;}
   .cred-card p{font-size:13px;color:var(--ice-dim);margin-bottom:14px;position:relative;}
   .cred-link{font-size:12px;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px;position:relative;}
+  .cred-links{display:flex;flex-direction:column;align-items:flex-start;gap:12px;position:relative;}
+  .cred-links .cred-link{width:fit-content;}
   @media(max-width:900px){.cred-grid{grid-template-columns:1fr;}}
 
   /* ---------- Contact ---------- */
@@ -490,7 +477,15 @@
     section{padding:90px 6vw;}
     .dock a span.label{display:none;}
     .dock a{padding:10px;}
+    .brand .full{display:none;}
+    .topbar{padding:18px 6vw;gap:12px;}
+    .top-cta{font-size:12px;padding:9px 12px;white-space:nowrap;}
+    footer{padding-bottom:100px;}
   }
+  .work-card:focus-visible,.svc-card:focus-visible{outline:2px solid var(--gold);outline-offset:4px;}
+  .work-summary{color:var(--ice-dim);font-size:13px;line-height:1.6;padding:0 20px 18px;}
+  .lightbox-description{color:var(--ice-dim);padding:18px 20px 24px;font-size:14px;line-height:1.65;}
+  @media (prefers-reduced-motion:reduce){.reveal,.tool-icon-card{opacity:1;transform:none;}}
 </style>
 </head>
 <body>
@@ -505,9 +500,9 @@
 <div class="topbar">
   <div class="brand">
     <div class="mark-photo"><img src="./assets/jarrell-arante.png" alt="Jarrell Arante"></div>
-    <span>JX Creative Studio<span class="full"> — Design · Edit · Stream · VA Support</span></span>
+    <span>JX Creative Studio<span class="full"> — Social media design & video</span></span>
   </div>
-  <a class="top-cta glass btn-ghost" href="#contact">Get a quote</a>
+  <a class="top-cta glass btn-ghost" href="#contact">Contact me</a>
 </div>
 
 <main>
@@ -515,11 +510,11 @@
   <section class="hero" id="home">
     <div class="hero-grid">
       <div>
-        <div class="eyebrow glass"><span class="pulse"></span>Now booking Q3 projects</div>
-        <h1>Premium visuals,<br>built for the <span class="accent">moment</span>.</h1>
-        <p>JX Creative Studio designs, edits, streams, and provides WIRED-certified virtual assistant support for events, organizations, and brands that need work to feel high-value — not homemade.</p>
+        <div class="eyebrow glass"><span class="pulse"></span>Available for freelance & remote work</div>
+        <h1>Design that makes<br>your content <span class="accent">stand out</span>.</h1>
+        <p>I'm Jarrell Arante, a social-media graphic designer and video editor. I create branded posts, event visuals, and engaging short-form edits for organizations and businesses.</p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href="#contact"><span class="btn-glow"></span>Start a project →</a>
+          <a class="btn btn-primary" href="#contact"><span class="btn-glow"></span>Work with me →</a>
           <a class="btn btn-ghost glass" href="#work"><span class="btn-glow"></span>View selected work</a>
         </div>
       </div>
@@ -553,13 +548,13 @@
       <div class="about-copy reveal">
         <span class="kicker">About me</span>
         <h2>The person behind the studio.</h2>
-        <p>I am Jarrell Arante, an Information and Communication Technology graduate and digital creator specializing in graphic design, video editing, livestream engineering, and virtual assistant support. I run JX Creative Studio, where I deliver polished creative assets alongside reliable, detail-oriented administrative and digital operations support — a combination shaped by hands-on experience in both creative production and corporate office work.</p>
-        <p>Beyond the studio, I hold a Certificate of Completion from the WIRED 7-Session VA Bootcamp, and I'm a With High Honors graduate ready to bring the same discipline to client work as I do to academics.</p>
+        <p>I'm Jarrell Arante, an ICT graduate and the independent creative behind JX Creative Studio. For over two years, I've designed social-media graphics, event materials, and publication layouts for school and community projects. I also edit videos and have experience supporting event livestreams.</p>
+        <p>My work combines visual design with careful organization and communication. I completed the WIRED 7-Session VA Bootcamp and graduated with High Honors. I'm looking for freelance projects and remote creative roles where I can keep growing and contribute reliable work.</p>
         <div class="about-facts">
           <div class="fact glass">📍 <strong>San Pedro, Laguna, PH</strong></div>
           <div class="fact glass">🗣️ <strong>English & Filipino</strong>, fluent</div>
           <div class="fact glass">🎓 <strong>With High Honors</strong>, Grade 12</div>
-          <div class="fact glass">✅ <strong>WIRED VA Bootcamp</strong> certified</div>
+          <div class="fact glass">✅ <strong>WIRED VA Bootcamp</strong> completed</div>
         </div>
       </div>
     </div>
@@ -568,8 +563,8 @@
   <section id="services">
     <div class="section-head reveal">
       <span class="kicker">What I do</span>
-      <h2>Three services, one studio.</h2>
-      <p>Click a card to see how each engagement actually runs, start to finish.</p>
+      <h2>Design and video for brands and events.</h2>
+      <p>Click a service to see the creative process, from brief to delivery.</p>
     </div>
     <div class="services-grid">
 
@@ -579,15 +574,15 @@
             <div class="svc-num">01</div>
             <div class="svc-icon">🎨</div>
             <h3>Graphic Design</h3>
-            <p>Posters, layouts, event materials, and social graphics built in Canva, Photoshop, and InDesign — sharp enough for print, fast enough for same-week deadlines.</p>
+            <p>Social posts, posters, campaign assets, and publication layouts designed in Canva, Photoshop, and InDesign.</p>
             <div class="svc-flip-hint">See the process →</div>
           </div>
           <div class="svc-face back glass">
             <h4>How it runs</h4>
             <ul class="svc-steps">
               <li><span class="n">01</span>Brief & references — 15 min call or form</li>
-              <li><span class="n">02</span>Concept draft within 24–48h</li>
-              <li><span class="n">03</span>One structured revision round</li>
+              <li><span class="n">02</span>Concept and draft for feedback</li>
+              <li><span class="n">03</span>Revisions based on agreed scope</li>
               <li><span class="n">04</span>Print & web-ready file delivery</li>
             </ul>
             <div class="svc-back-hint">← click to flip back</div>
@@ -617,58 +612,15 @@
         </div>
       </div>
 
-      <div class="svc-card reveal" data-idx="2">
-        <div class="svc-inner">
-          <div class="svc-face front glass">
-            <div class="svc-num">03</div>
-            <div class="svc-icon">🔴</div>
-            <h3>OBS Livestream Setup</h3>
-            <p>Full OBS configuration and technical setup for events, church services, and gaming streams — clean scenes, stable output, zero surprises on air.</p>
-            <div class="svc-flip-hint">See the process →</div>
-          </div>
-          <div class="svc-face back glass">
-            <h4>How it runs</h4>
-            <ul class="svc-steps">
-              <li><span class="n">01</span>Venue & bandwidth check</li>
-              <li><span class="n">02</span>Scene, overlay & audio routing build</li>
-              <li><span class="n">03</span>Dry-run test stream</li>
-              <li><span class="n">04</span>Live day support & monitoring</li>
-            </ul>
-            <div class="svc-back-hint">← click to flip back</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="svc-card reveal" data-idx="3">
-        <div class="svc-inner">
-          <div class="svc-face front glass">
-            <div class="svc-num">04</div>
-            <div class="svc-icon">🗂️</div>
-            <h3>Virtual Assistant Support</h3>
-            <p>WIRED-certified virtual assistance covering file & record management, data entry, document organization, and day-to-day admin coordination — trained for client-readiness, not just tasks.</p>
-            <div class="svc-flip-hint">See the process →</div>
-          </div>
-          <div class="svc-face back glass">
-            <h4>How it runs</h4>
-            <ul class="svc-steps">
-              <li><span class="n">01</span>Workflow & tools intake</li>
-              <li><span class="n">02</span>System / folder & tracker setup</li>
-              <li><span class="n">03</span>Daily or weekly task turnaround</li>
-              <li><span class="n">04</span>Async status updates & handoff notes</li>
-            </ul>
-            <div class="svc-back-hint">← click to flip back</div>
-          </div>
-        </div>
-      </div>
-
     </div>
+    <p class="reveal" style="margin-top:22px;color:var(--ice-dim)">Also experienced in OBS event livestream setup and administrative organization.</p>
   </section>
 
   <section id="work">
     <div class="section-head reveal">
       <span class="kicker">Selected work</span>
-      <h2>Portfolio, sorted by craft.</h2>
-      <p>Filter by category to see the work that matches what you need.</p>
+      <h2>Selected creative work.</h2>
+      <p>Explore real design and video work. Click a project for a closer look.</p>
     </div>
 
     <div class="tabs glass reveal" id="tabs">
@@ -680,19 +632,28 @@
 
     <div class="work-grid" id="workGrid">
 
-      <div class="work-card featured glass reveal" data-cat="design" data-type="image" data-src="./assets/work/web-publishing-proof.png" data-title="4th Place — Online Web Publishing, Division Schools Press Conference">
-        <div class="work-thumb"><img src="./assets/work/web-publishing-proof.png" alt="Online Web Publishing award proof"><div class="badge">🏆 award</div></div>
-        <div class="work-info"><div class="cat">Layout Design</div><h4>4th Place — Online Web Publishing, Division Schools Press Conference</h4></div>
+      <div class="work-card glass reveal" data-cat="design" data-type="image" data-src="./assets/work/pageant-candidate.png" data-title="Search for Mr. & Mrs. Senior 2026 — Candidate Poster">
+        <div class="work-thumb"><img src="./assets/work/pageant-candidate.png" alt="Pageant candidate poster"></div>
+        <div class="work-info"><div class="cat">Graphic Design</div><h4>Mr. & Mrs. Senior 2026 — Candidate Poster</h4></div>
+        <p class="work-summary">A candidate-focused visual designed as part of an event series.</p>
       </div>
 
-      <div class="work-card featured glass reveal" data-cat="design" data-type="pdf" data-src="./assets/work/newspaper-layout.pdf" data-title="6th Place — Newspaper Layout, Division Schools Press Conference">
-        <div class="work-thumb"><div class="badge">🏆 award</div>📰 Newspaper Layout</div>
-        <div class="work-info"><div class="cat">Layout Design</div><h4>6th Place — Newspaper Layout, Division Schools Press Conference</h4></div>
+      <div class="work-card glass reveal" data-cat="design" data-type="image" data-src="./assets/work/pageant-lineup.png" data-title="Search for Mr. & Mrs. Senior 2026 — Candidate Lineup">
+        <div class="work-thumb"><img src="./assets/work/pageant-lineup.png" alt="Pageant lineup poster"></div>
+        <div class="work-info"><div class="cat">Graphic Design</div><h4>Mr. & Mrs. Senior 2026 — Candidate Lineup</h4></div>
+        <p class="work-summary">A companion lineup graphic showing consistency across the series.</p>
       </div>
 
-      <div class="work-card glass reveal" data-cat="design" data-type="image" data-src="./assets/work/buwan-ng-wika.png" data-title="Buwan ng Wika 2025 — Campaign Poster">
+      <div class="work-card glass reveal" data-cat="design" data-type="pdf" data-src="./assets/work/newspaper-layout.pdf" data-title="Ang Tinig — Filipino Newspaper Layout" data-summary="Editorial layout work contributed to Ang Tinig, the school publication. View the full newspaper PDF; its publication received 6th Place Best Layout and 7th Place Best School Paper at the 2025 Division Schools Press Conference.">
+        <div class="work-thumb"><img src="./assets/work/ang-tinig-layout-preview.png" alt="Preview of Ang Tinig newspaper layout, first page" style="object-position:top"><div class="badge">View 11-page PDF</div></div>
+        <div class="work-info"><div class="cat">Editorial / InDesign</div><h4>Ang Tinig — Filipino Newspaper Layout</h4></div>
+        <p class="work-summary">Publication layout contribution; open the full newspaper.</p>
+      </div>
+
+      <div class="work-card glass reveal" data-cat="design" data-type="image" data-src="./assets/work/buwan-ng-wika.png" data-title="Buwan ng Wika 2025 — Event Poster" data-summary="Buwan ng Wika event visual combining cultural imagery with event-focused typography. Role: graphic design.">
         <div class="work-thumb"><img src="./assets/work/buwan-ng-wika.png" alt="Buwan ng Wika poster"></div>
-        <div class="work-info"><div class="cat">Graphic Design</div><h4>Buwan ng Wika 2025 — Campaign Poster</h4></div>
+        <div class="work-info"><div class="cat">Event graphic design</div><h4>Buwan ng Wika 2025 — Event Poster</h4></div>
+        <p class="work-summary">Cultural event visual with layered imagery and a prominent title.</p>
       </div>
 
       <div class="work-card glass reveal" data-cat="design" data-type="image" data-src="./assets/work/bonifacio-day.png" data-title="Bonifacio Day — Commemorative Poster">
@@ -700,43 +661,13 @@
         <div class="work-info"><div class="cat">Graphic Design</div><h4>Bonifacio Day — Commemorative Poster</h4></div>
       </div>
 
-      <div class="work-card glass reveal" data-cat="design" data-type="image" data-src="./assets/work/happy-new-year.png" data-title="Happy New Year 2026 — Org Greeting Poster">
-        <div class="work-thumb"><img src="./assets/work/happy-new-year.png" alt="Happy New Year poster"></div>
-        <div class="work-info"><div class="cat">Graphic Design</div><h4>Happy New Year 2026 — Org Greeting Poster</h4></div>
-      </div>
-
-      <div class="work-card glass reveal" data-cat="design" data-type="image" data-src="./assets/work/ber-months.png" data-title="Hello, BER Months! — Seasonal Poster">
-        <div class="work-thumb"><img src="./assets/work/ber-months.png" alt="BER Months poster"></div>
-        <div class="work-info"><div class="cat">Graphic Design</div><h4>Hello, BER Months! — Seasonal Poster</h4></div>
-      </div>
-
-      <div class="work-card glass reveal" data-cat="design" data-type="image" data-src="./assets/work/yearn-learn.png" data-title="Yearn, Learn — Midterms Poster">
-        <div class="work-thumb"><img src="./assets/work/yearn-learn.png" alt="Yearn Learn poster"></div>
-        <div class="work-info"><div class="cat">Graphic Design</div><h4>Yearn, Learn — Midterms Engagement Poster</h4></div>
-      </div>
-
-      <div class="work-card glass reveal" data-cat="design" data-type="image" data-src="./assets/work/pageant-candidate.png" data-title="Search for Mr. & Mrs. Senior 2026 — Candidate Poster">
-        <div class="work-thumb"><img src="./assets/work/pageant-candidate.png" alt="Pageant candidate poster"></div>
-        <div class="work-info"><div class="cat">Graphic Design</div><h4>Mr. & Mrs. Senior 2026 — Candidate Poster</h4></div>
-      </div>
-
-      <div class="work-card glass reveal" data-cat="design" data-type="image" data-src="./assets/work/pageant-lineup.png" data-title="Search for Mr. & Mrs. Senior 2026 — Candidate Lineup">
-        <div class="work-thumb"><img src="./assets/work/pageant-lineup.png" alt="Pageant lineup poster"></div>
-        <div class="work-info"><div class="cat">Graphic Design</div><h4>Mr. & Mrs. Senior 2026 — Candidate Lineup</h4></div>
-      </div>
-
       <div class="work-card glass reveal" data-cat="video" data-type="video" data-src="https://www.youtube.com/embed/HAT8vXljYAM" data-title="School Org Event Recap — Highlight Edit">
         <div class="work-thumb"><img src="https://img.youtube.com/vi/HAT8vXljYAM/hqdefault.jpg" alt="Event recap thumbnail"><div class="badge">▶ video</div></div>
         <div class="work-info"><div class="cat">Video Editing</div><h4>School Org Event Recap — Highlight Edit</h4></div>
       </div>
 
-      <div class="work-card glass reveal" data-cat="video" data-type="video" data-src="https://www.youtube.com/embed/GthoIXKykUs" data-title="Valorant Gaming Edit — Portfolio">
-        <div class="work-thumb"><img src="https://img.youtube.com/vi/GthoIXKykUs/hqdefault.jpg" alt="Gaming edit thumbnail"><div class="badge">▶ video</div></div>
-        <div class="work-info"><div class="cat">Video Editing</div><h4>Valorant Gaming Edit — Portfolio</h4></div>
-      </div>
-
-      <div class="work-card glass reveal" data-cat="stream" data-type="image" data-src="./assets/work/ai-va-seminar-certificate.png" data-title="Live Event Tech Support — Certificate of Participation">
-        <div class="work-thumb"><img src="./assets/work/ai-va-seminar-certificate.png" alt="Seminar tech support certificate"><div class="badge">setup</div></div>
+      <div class="work-card glass reveal" data-cat="stream" data-type="image" data-src="./assets/work/ai-va-seminar-certificate.png" data-title="Live Event Tech Support — Mobile Legends Tournament, CODM Tournament">
+        <div class="work-thumb"><img src="./assets/work/ai-va-seminar-certificate.png" alt="Live event technical setup"><div class="badge">event tech</div></div>
         <div class="work-info"><div class="cat">OBS / Event Tech</div><h4>Live Event Tech Support — Mobile Legends Tournament, CODM Tournament</h4></div>
       </div>
 
@@ -748,10 +679,6 @@
       <span class="kicker">Under the hood</span>
       <h2>Tools of the trade.</h2>
     </div>
-    <div class="tools-wrap glass reveal">
-      <div class="tools-track" id="toolsTrack"></div>
-    </div>
-
     <div class="tools-icon-grid" id="toolsIconGrid">
       <div class="tool-icon-card glass">
         <div class="icon-wrap"><img src="./assets/tools/premiere-pro.png" alt="Adobe Premiere Pro logo"></div>
@@ -783,26 +710,6 @@
         <h4>OBS Studio</h4>
         <span class="role">Livestream Setup</span>
       </div>
-      <div class="tool-icon-card glass">
-        <div class="icon-wrap"><img src="./assets/tools/streamlabs.png" alt="Streamlabs logo"></div>
-        <h4>Streamlabs</h4>
-        <span class="role">Livestream Setup</span>
-      </div>
-      <div class="tool-icon-card glass">
-        <div class="icon-wrap"><img src="./assets/tools/tiktok-live.png" alt="TikTok LIVE Studio logo"></div>
-        <h4>TikTok LIVE Studio</h4>
-        <span class="role">Livestream Setup</span>
-      </div>
-      <div class="tool-icon-card glass">
-        <div class="icon-wrap"><img src="./assets/tools/elevenlabs.png" alt="ElevenLabs logo"></div>
-        <h4>ElevenLabs</h4>
-        <span class="role">AI Voice</span>
-      </div>
-      <div class="tool-icon-card glass">
-        <div class="icon-wrap"><img src="./assets/tools/ai-tools.png" alt="ChatGPT and Gemini logos"></div>
-        <h4>ChatGPT & Gemini</h4>
-        <span class="role">AI Assist</span>
-      </div>
     </div>
   </section>
 
@@ -820,7 +727,12 @@
       <div class="cred-card glass reveal">
         <strong>6th Place, Newspaper Layout (Filipino)</strong>
         <p>Division Schools Press Conference 2025</p>
-        <a class="cred-link" href="./assets/work/newspaper-layout.pdf" target="_blank">View certificate →</a>
+        <p>Certificates awarded to the school publication Ang Tinig.</p>
+        <div class="cred-links">
+          <a class="cred-link" href="./assets/work/newspaper-layout.pdf" target="_blank" rel="noopener noreferrer">View supporting document →</a>
+          <a class="cred-link" href="./assets/credentials/ang-tinig-best-layout-6th.jpg" target="_blank" rel="noopener noreferrer">View certificate — 6th Place Best Layout ↗</a>
+          <a class="cred-link" href="./assets/credentials/ang-tinig-best-school-paper-7th.jpg" target="_blank" rel="noopener noreferrer">View certificate — 7th Place Best School Paper ↗</a>
+        </div>
       </div>
       <div class="cred-card glass reveal">
         <strong>WIRED VA Bootcamp — Certificate of Completion</strong>
@@ -831,39 +743,37 @@
         <strong>ICT Graduate — With High Honors</strong>
         <p>IETI College of Science and Technology, San Pedro City, Laguna (2024–2026)</p>
       </div>
-      <div class="cred-card glass reveal">
-        <strong>2+ years active</strong>
-        <p>Designing for school events, community programs & organizations</p>
-      </div>
     </div>
   </section>
 
   <section id="contact">
     <div class="contact-card glass reveal">
-      <h2>Let's build something that looks expensive.</h2>
-      <p>Tell us what you're working on — poster, edit, livestream, or ongoing VA support — and we'll get back to you within a day.</p>
+      <h2>Let's make your next project stand out.</h2>
+      <p>Tell me about the graphics, video, livestream, or creative support you need, and I'll respond as soon as I can.</p>
       <div class="contact-links">
-        <a class="btn btn-primary" href="mailto:jajillmarante@gmail.com"><span class="btn-glow"></span>Email us →</a>
-        <a class="btn btn-ghost glass" href="https://www.facebook.com/profile.php?id=61591908333417" target="_blank"><span class="btn-glow"></span>Message on Facebook</a>
-        <a class="btn btn-ghost glass" href="./assets/Jarrell-Arante-Resume.pdf" target="_blank"><span class="btn-glow"></span>Download resume ↓</a>
+        <a class="btn btn-primary" href="mailto:jajillmarante@gmail.com?subject=Creative%20project%20inquiry"><span class="btn-glow"></span>Email me →</a>
+        <a class="btn btn-ghost glass" href="https://www.linkedin.com/in/jarrell-arante-019a543b8/" target="_blank" rel="noopener noreferrer"><span class="btn-glow"></span>Connect on LinkedIn ↗</a>
+        <a class="btn btn-ghost glass" href="https://www.facebook.com/profile.php?id=61591908333417" target="_blank" rel="noopener noreferrer"><span class="btn-glow"></span>Message on Facebook</a>
+        <a class="btn btn-ghost glass" href="./Jarrell-Arante-Resume-Updated.pdf" target="_blank" rel="noopener noreferrer"><span class="btn-glow"></span>View résumé ↗</a>
       </div>
     </div>
   </section>
 
   <footer>
     <div>© 2026 JX Creative Studio — San Pedro, Laguna, Philippines, available for local & remote work</div>
-    <div><a href="https://www.facebook.com/profile.php?id=61591908333417" target="_blank">Facebook</a> &nbsp;·&nbsp; <span>jajillmarante@gmail.com</span> &nbsp;·&nbsp; <span>0994 257 3758</span></div>
+    <div><a href="https://www.linkedin.com/in/jarrell-arante-019a543b8/" target="_blank" rel="noopener noreferrer">LinkedIn</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/profile.php?id=61591908333417" target="_blank" rel="noopener noreferrer">Facebook</a> &nbsp;·&nbsp; <span>jajillmarante@gmail.com</span> &nbsp;·&nbsp; <span>0994 257 3758</span></div>
   </footer>
 
 </main>
 
-<div class="lightbox" id="lightbox">
-  <div class="lightbox-inner glass-strong">
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" aria-hidden="true">
+  <div class="lightbox-inner glass-strong" tabindex="-1">
     <div class="lightbox-head">
       <h4 id="lightboxTitle"></h4>
       <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
     </div>
     <div class="lightbox-body" id="lightboxBody"></div>
+    <p class="lightbox-description" id="lightboxDescription" hidden></p>
   </div>
 </div>
 
@@ -897,7 +807,7 @@
     orbs[2].style.marginTop = (curY * 25) + 'px';
     requestAnimationFrame(animateOrbs);
   }
-  animateOrbs();
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) animateOrbs();
 
   /* ---------- Dock: active section + condense on scroll ---------- */
   const dock = document.getElementById('dock');
@@ -936,15 +846,23 @@
   /* ---------- Service card flip ---------- */
   document.querySelectorAll('.svc-card').forEach(card => {
     card.addEventListener('click', () => card.classList.toggle('flipped'));
+    card.setAttribute('role', 'button');
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('aria-label', `Show process for ${card.querySelector('h3').textContent}`);
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); }
+    });
   });
 
   /* ---------- Portfolio tab filter ---------- */
   const tabBtns = document.querySelectorAll('.tab-btn');
   const workCards = document.querySelectorAll('.work-card');
+  tabBtns.forEach(btn => btn.setAttribute('aria-pressed', String(btn.classList.contains('active'))));
   tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      tabBtns.forEach(b => b.classList.remove('active'));
+      tabBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
       btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
       const filter = btn.dataset.filter;
       workCards.forEach((card, i) => {
         const match = filter === 'all' || card.dataset.cat === filter;
@@ -971,9 +889,14 @@
   const lightboxBody = document.getElementById('lightboxBody');
   const lightboxTitle = document.getElementById('lightboxTitle');
   const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxDescription = document.getElementById('lightboxDescription');
+  let lightboxTrigger = null;
 
-  function openLightbox(type, src, title){
+  function openLightbox(type, src, title, summary, trigger){
+    lightboxTrigger = trigger;
     lightboxTitle.textContent = title || '';
+    lightboxDescription.textContent = summary || '';
+    lightboxDescription.hidden = !summary;
     lightboxBody.innerHTML = '';
     if (type === 'video') {
       const iframe = document.createElement('iframe');
@@ -1000,19 +923,33 @@
       lightboxBody.appendChild(img);
     }
     lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
     document.body.classList.add('lock');
+    lightboxClose.focus();
   }
   function closeLightbox(){
     lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('lock');
     lightboxBody.innerHTML = '';
+    if (lightboxTrigger) lightboxTrigger.focus();
   }
   document.querySelectorAll('.work-card[data-type]').forEach(card => {
-    card.addEventListener('click', () => openLightbox(card.dataset.type, card.dataset.src, card.dataset.title));
+    card.setAttribute('role', 'button');
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('aria-label', `Open ${card.dataset.title}`);
+    card.addEventListener('click', () => openLightbox(card.dataset.type, card.dataset.src, card.dataset.title, card.dataset.summary, card));
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); }
+    });
   });
   lightboxClose.addEventListener('click', closeLightbox);
   lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+  document.addEventListener('keydown', e => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'Tab') { e.preventDefault(); lightboxClose.focus(); }
+  });
 
   /* ---------- Magnetic buttons ---------- */
   document.querySelectorAll('.btn').forEach(btn => {
@@ -1040,21 +977,6 @@
     });
   }, { threshold: 0.2 });
   toolIconCards.forEach(card => toolIconObserver.observe(card));
-
-  /* ---------- Tools marquee build ---------- */
-  const tools = [
-    ['01','Adobe Premiere Pro'], ['02','Adobe InDesign'], ['03','Adobe Photoshop'],
-    ['04','CapCut'], ['05','Canva'], ['06','OBS Studio'], ['07','ElevenLabs'], ['08','TikTok LIVE Studio']
-  ];
-  const track = document.getElementById('toolsTrack');
-  function buildTools(){
-    let html = '';
-    [...tools, ...tools].forEach(([n, name]) => {
-      html += `<div class="tool-pill"><span class="tool-mark mono">${n}</span><h4>${name}</h4></div>`;
-    });
-    track.innerHTML = html;
-  }
-  buildTools();
 
   /* ---------- Dock click smooth scroll (explicit, non-linear feel) ---------- */
   dockLinks.forEach(link => {
