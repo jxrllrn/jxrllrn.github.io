@@ -8,9 +8,9 @@ const products = [
   { id: "pandan-matcha", name: "Pandan Coco Matcha", category: "non-coffee", price: 170, emoji: "🍵", image: "assets/products/pandan-matcha.png", color: "#c5d3ab", tag: "No espresso", description: "Matcha, pandan, and smooth coconut milk." },
   { id: "mango-sago", name: "Mango Sago Fizz", category: "non-coffee", price: 150, emoji: "🥭", image: "assets/products/mango-sago.png", color: "#f4d58c", tag: "Refreshing", description: "Mango, mini sago, soda, and a squeeze of lime." },
   { id: "ensaymada", name: "Classic Ensaymada", category: "bites", price: 95, emoji: "🥐", image: "assets/products/ensaymada.png", color: "#f2d29f", tag: "Fresh daily", description: "Soft buttery bread with cheese and sugar." },
-  { id: "ube-pandesal", name: "Ube Cheese Pandesal", category: "bites", price: 85, emoji: "🍞", color: "#d7b4d8", tag: "Snack", description: "Warm pandesal with creamy ube-cheese filling." },
-  { id: "bibingka-waffle", name: "Bibingka Waffle", category: "bites", price: 145, emoji: "🧇", color: "#ddc18c", tag: "All-day", description: "Coconut waffle, salted egg butter, and muscovado." },
-  { id: "taho-affogato", name: "Taho Affogato", category: "bites", price: 150, emoji: "🍨", color: "#e8d8bd", tag: "Timpla twist", description: "Silken taho, arnibal, sago, and espresso." }
+  { id: "ube-pandesal", name: "Ube Cheese Pandesal", category: "bites", price: 85, emoji: "🍞", color: "#d7b4d8", tag: "Snack", description: "Warm pandesal with creamy ube-cheese filling.", image: "assets/products/ube-pandesal.png" },
+  { id: "bibingka-waffle", name: "Bibingka Waffle", category: "bites", price: 145, emoji: "🧇", color: "#ddc18c", tag: "All-day", description: "Coconut waffle, salted egg butter, and muscovado.", image: "assets/products/bibingka-waffle.png" },
+  { id: "taho-affogato", name: "Taho Affogato", category: "bites", price: 150, emoji: "🍨", color: "#e8d8bd", tag: "Timpla twist", description: "Silken taho, arnibal, sago, and espresso.", image: "assets/products/taho-affogato.png" }
 ];
 
 const peso = value => `₱${value.toLocaleString("en-PH")}`;

@@ -29,13 +29,8 @@ All completed assets are in `assets/products/`:
 - `pandan-matcha.png`
 - `mango-sago.png`
 - `ensaymada.png`
+- `ube-pandesal.png`
+- `bibingka-waffle.png`
+- `taho-affogato.png`
 
-## Queued assets
-
-The image-generation allowance was reached before the final three products could be created. The website deliberately shows branded placeholders for:
-
-- Ube Cheese Pandesal
-- Bibingka Waffle
-- Taho Affogato
-
-When generation is available again, create these with the same art direction, place them in `assets/products/`, and add their `image` paths to the corresponding objects in `app.js`.
+All twelve menu products now have finished product visuals in the menu and cart.

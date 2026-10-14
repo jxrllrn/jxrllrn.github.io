@@ -15,8 +15,7 @@ Reviewed against the agreed mobile-first small-business café website requiremen
 - Mobile and desktop navigation
 - Keyboard focus styles, semantic headings, labels, and reduced-motion support
 - Consistent brand colors, typography, tone, and imagery
-- Nine original branded product photographs integrated into the menu and cart
-- Graceful branded placeholders for three product photographs awaiting generation
+- Twelve original branded product photographs integrated into the menu and cart
 - Subtle, brand-appropriate motion with a reduced-motion fallback
 - Basic SEO description and social-sharing metadata
 - External map link for the fictional location area
@@ -32,15 +31,14 @@ These limitations are appropriate for a fictional portfolio demonstration and sh
 
 ## Remaining before portfolio publication
 
-1. Generate and replace the queued images for Ube Cheese Pandesal, Bibingka Waffle, and Taho Affogato.
-2. Create a GitHub repository and make clean, understandable commits.
-3. Deploy the site to Vercel.
-4. Test the public URL on a real phone and desktop browser.
-5. Add the real deployed URL to this README.
-6. Capture three screenshots: desktop hero, mobile menu, and mobile order review.
-7. Record a 45–60 second walkthrough.
-8. Write a short case study covering the problem, audience, process, challenges, solution, and lessons learned.
-9. Add the case study and live link to the portfolio website.
+1. Create a GitHub repository and make clean, understandable commits.
+2. Deploy the updated site to Vercel.
+3. Test the public URL on a real phone and desktop browser.
+4. Add the real deployed URL to this README.
+5. Capture three screenshots: desktop hero, mobile menu, and mobile order review.
+6. Record a 45–60 second walkthrough.
+7. Write a short case study covering the problem, audience, process, challenges, solution, and lessons learned.
+8. Add the case study and live link to the portfolio website.
 
 ## Optional client-specific additions
 

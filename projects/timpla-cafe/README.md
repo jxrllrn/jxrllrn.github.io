@@ -22,8 +22,7 @@ npx serve .
 - Reviewable and copyable demo order summary
 - Responsive navigation and accessible interaction states
 - Original generated hero image
-- Nine original branded product images with transparent backgrounds
-- Branded queued-image placeholders for the three remaining menu items
+- Twelve original branded product images with transparent backgrounds
 - Subtle scroll reveals, product hover motion, and reduced-motion support
 - No framework or build dependency
 
@@ -42,7 +41,7 @@ See [PROJECT_BRIEF.md](PROJECT_BRIEF.md) for the full strategy, menu, page requi
 timpla-cafe/
 ├── assets/
 │   ├── products/
-│   │   └── nine product images
+│   │   └── twelve product images
 │   └── timpla-hero.png
 ├── app.js
 ├── index.html
