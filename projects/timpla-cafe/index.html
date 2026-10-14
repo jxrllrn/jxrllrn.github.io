@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#482B1B">
+  <meta name="description" content="Timpla Café — coffee made for your kind of day.">
+  <meta property="og:title" content="Timpla Café">
+  <meta property="og:description" content="A mobile-first café website and digital-menu portfolio concept.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/timpla-hero.png">
+  <title>Timpla Café</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23482b1b'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-size='34' fill='%23fff7e8'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Timpla Café home">
+      <span class="brand-mark" aria-hidden="true">T</span>
+      <span>Timpla <em>Café</em></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#menu" data-nav="menu">Menu</a>
+      <a href="#cart" data-nav="cart">Cart <span class="cart-pill" data-cart-count>0</span></a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+    <a class="header-order" href="#menu">Order now</a>
+  </header>
+
+  <main id="main">
+    <section class="screen active" data-screen="home" aria-labelledby="home-title">
+      <div class="hero">
+        <img src="assets/timpla-hero.png" alt="Iced coffee, hot latte, and ensaymada on a sunlit café table">
+        <div class="hero-overlay"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Your everyday tambayan</p>
+          <h1 id="home-title">A little <em>pahinga</em> in every cup.</h1>
+          <p>Study, catch up, or simply slow down. Timpla serves Filipino-inspired drinks and comfort bites made for your kind of day.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#menu">See the menu <span aria-hidden="true">→</span></a>
+            <a class="button button-ghost" href="#contact">Find our café</a>
+          </div>
+        </div>
+        <div class="hero-note" aria-label="Store hours">
+          <span>Open today</span>
+          <strong>7:00 AM–10:00 PM</strong>
+        </div>
+      </div>
+
+      <section class="home-section intro" aria-labelledby="intro-title">
+        <p class="eyebrow">Made for the in-between</p>
+        <h2 id="intro-title">Come for the coffee.<br>Stay for the vibe.</h2>
+        <p class="section-lede">Fast Wi-Fi, plenty of outlets, warm light, and drinks worth posting. Timpla is your neighborhood space for focused mornings and unhurried afternoons.</p>
+        <div class="feature-grid">
+          <article><span>01</span><h3>Study-friendly</h3><p>Comfortable seats, charging spots, and tables that fit more than a laptop.</p></article>
+          <article><span>02</span><h3>Local flavors</h3><p>Familiar Filipino ingredients, remixed into coffee-shop favorites.</p></article>
+          <article><span>03</span><h3>Always welcoming</h3><p>For study dates, barkada catch-ups, quick meetings, and solo resets.</p></article>
+        </div>
+      </section>
+
+      <section class="home-section bestseller" aria-labelledby="best-title">
+        <div>
+          <p class="eyebrow">Crowd favorite</p>
+          <h2 id="best-title">Ube Cloud Latte</h2>
+          <p>Silky espresso, creamy ube, and a light coconut cloud. Sweet, balanced, and unmistakably Timpla.</p>
+          <button class="button button-primary quick-add" data-product-id="ube-cloud">Add for ₱165</button>
+        </div>
+        <div class="drink-art" aria-hidden="true">
+          <span class="product-orbit"></span>
+          <img src="assets/products/ube-cloud.png" alt="" loading="lazy">
+          <p>UBE<br>CLOUD</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="screen" data-screen="menu" aria-labelledby="menu-title">
+      <header class="page-heading">
+        <p class="eyebrow">Choose your timpla</p>
+        <h1 id="menu-title">Something for every mood.</h1>
+        <p>Familiar Filipino flavors, brewed and baked with a playful twist.</p>
+      </header>
+      <div class="menu-tools">
+        <label class="menu-search" for="menu-search">
+          <span>Search the menu</span>
+          <input id="menu-search" type="search" placeholder="Try “ube” or “latte”" autocomplete="off">
+        </label>
+        <div class="filter-row" role="group" aria-label="Filter menu">
+          <button class="filter active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" data-filter="coffee" aria-pressed="false">Coffee</button>
+          <button class="filter" data-filter="non-coffee" aria-pressed="false">Non-coffee</button>
+          <button class="filter" data-filter="bites" aria-pressed="false">Bites</button>
+        </div>
+      </div>
+      <div class="menu-grid" id="menu-grid"></div>
+    </section>
+
+    <section class="screen" data-screen="cart" aria-labelledby="cart-title">
+      <header class="page-heading compact">
+        <p class="eyebrow">Almost yours</p>
+        <h1 id="cart-title">Your order</h1>
+      </header>
+      <div class="cart-layout">
+        <div id="cart-items" class="cart-items"></div>
+        <aside class="order-summary" aria-labelledby="summary-title">
+          <h2 id="summary-title">Order summary</h2>
+          <div><span>Subtotal</span><strong id="subtotal">₱0</strong></div>
+          <div><span>Service fee</span><strong id="service-fee">₱0</strong></div>
+          <div class="summary-total"><span>Total</span><strong id="total">₱0</strong></div>
+          <button class="button button-primary checkout" id="checkout-button">Place order</button>
+          <p>Demo checkout only—no payment will be collected.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="contact" aria-labelledby="contact-title">
+      <div class="contact-hero">
+        <div class="page-heading">
+          <p class="eyebrow">Come hang out</p>
+          <h1 id="contact-title">Your table is waiting.</h1>
+          <p>Drop in for a quick cup or settle in for the afternoon. We saved you a spot.</p>
+        </div>
+        <a class="map-card" href="https://www.google.com/maps/search/?api=1&amp;query=Maginhawa%20Quezon%20City" target="_blank" rel="noreferrer" aria-label="Open the fictional Timpla Café area in Google Maps">
+          <span class="road road-one"></span><span class="road road-two"></span><span class="road road-three"></span>
+          <span class="map-pin">T</span><strong>Maginhawa, QC</strong>
+        </a>
+      </div>
+      <div class="contact-grid">
+        <section class="visit-card">
+          <p class="eyebrow">Visit us</p>
+          <h2>Timpla Café</h2>
+          <p>Maginhawa, Quezon City<br>Metro Manila, Philippines</p>
+          <dl>
+            <div><dt>Monday–Thursday</dt><dd>7 AM–10 PM</dd></div>
+            <div><dt>Friday–Sunday</dt><dd>7 AM–11 PM</dd></div>
+            <div><dt>Email</dt><dd>hello@timplacafe.test</dd></div>
+          </dl>
+        </section>
+        <form class="contact-form" id="contact-form">
+          <p class="eyebrow">Say hello</p>
+          <h2>What’s on your mind?</h2>
+          <label>Name<input name="name" autocomplete="name" required placeholder="Your name"></label>
+          <label>Email<input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label>
+          <label>Message<textarea name="message" rows="4" required placeholder="Tell us anything..."></textarea></label>
+          <button class="button button-primary" type="submit">Test message form</button>
+          <p class="demo-note">Portfolio demo only. This form validates input but does not transmit personal information.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><a class="brand footer-brand" href="#home"><span class="brand-mark">T</span><span>Timpla <em>Café</em></span></a><p>Coffee made for your kind of day.</p></div>
+    <div><p>Social channels</p><span class="social-placeholder">Instagram — concept</span><span class="social-placeholder">TikTok — concept</span></div>
+    <p>© 2026 Timpla Café. A fictional portfolio concept.</p>
+  </footer>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="#home" data-nav="home"><span aria-hidden="true">⌂</span>Home</a>
+    <a href="#menu" data-nav="menu"><span aria-hidden="true">☕</span>Menu</a>
+    <a href="#cart" data-nav="cart"><span class="mobile-cart-wrap" aria-hidden="true">▣<b data-cart-count>0</b></span>Cart</a>
+    <a href="#contact" data-nav="contact"><span aria-hidden="true">⌖</span>Contact</a>
+  </nav>
+
+  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+    <form method="dialog">
+      <button class="dialog-close" aria-label="Close order review">×</button>
+      <p class="eyebrow">Demo checkout</p>
+      <h2 id="order-dialog-title">Review your order</h2>
+      <pre id="order-text"></pre>
+      <p>No order or payment will be submitted. Copy this summary to demonstrate a handoff to a real ordering channel.</p>
+      <div class="dialog-actions">
+        <button class="button button-primary" id="copy-order" type="button">Copy order summary</button>
+        <button class="button button-secondary" value="close">Keep browsing</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js?v=2"></script>
+</body>
+</html>
