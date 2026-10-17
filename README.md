@@ -18,6 +18,8 @@ Open `index.html` in a browser, or serve this folder with any static server.
 
 ## Live project
 
+- HINAY: https://jxrllrn.github.io/projects/hinay/ — a fictional skincare brand microsite, static campaign, and two edited Google Flow films. Brand assets and the case study are included in `projects/hinay/`. See its process notes for AI assistance and authorship.
+
 - Timpla Café: https://timpla-cafe-six.vercel.app/
 
 ## Before publishing

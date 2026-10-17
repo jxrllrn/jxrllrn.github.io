@@ -1,0 +1,32 @@
+HINAY — WEBSITE DESIGN, VERSION 2
+
+PURPOSE
+The homepage is a fictional brand microsite and portfolio showcase. It introduces the brand, presents its product and campaign, and lets a prospective client inspect the creative work and process. It is not a working skincare store. No product checkout, subscription, data collection or customer claims have been added.
+
+WHAT THE FIRST VERSION LACKED
+It presented the delivery files as a mostly uniform gallery. Downloads, asset counts and production notes competed with the brand story. Repeated grids created little change of pace, and artwork opened as image files rather than in an integrated viewer. There was little to interact with beyond file links.
+
+WHAT CHANGED
+- Stronger opening: large editorial headline, arched photography and a clear path into Daily Reset.
+- Typography: DM Sans remains the brand's main font; Georgia italic is a website editorial accent for softer, more expressive headline moments. This accent does not change the artwork or packaging wordmark.
+- Visual rhythm: cream, sage and forest sections, alternating layouts, decorative ripple lines and full-width story passages.
+- Product exploration: three selectable product scenes with accurate selected-button states.
+- Story: three selectable evening chapters update the image, label and description.
+- Campaign: category filters for three ads, five carousel panels and three product images.
+- Artwork viewer: native modal dialog, previous/next navigation, keyboard arrows, Escape dismissal, focus return and download links.
+- Navigation: sticky desktop navigation, active section indication, mobile menu and back-to-top link.
+- Motion: a continuous paired-group ticker, restrained image drift, scroll reveals and reduced-motion support.
+- Clear project context: FAQ, case-study links, provenance and fictional-brand disclosure.
+- The full original gallery is preserved at campaign-kit.html for file browsing.
+
+DESIGN INTENT
+The website lets a viewer experience the brand first, then inspect the work. Its business value as a portfolio piece is to demonstrate how identity, product imagery, copy, layouts and interaction can form one coherent experience. It does not prove customer demand, conversions, sales or independent client results.
+
+VERIFICATION
+The actual result is saved in website-verification.json. Checked at 320, 390, 760, 768, 1024, 1440 and 1920px viewport widths. Product selection, story chapters, all eleven artwork viewers, local download targets, keyboard arrows, wraparound, focus return, Escape, FAQ and mobile-menu behavior were exercised. Reduced-motion behavior and equal-width ticker groups were checked. No missing local links, broken loaded images, page script errors or page-width overflow were found in these checks.
+
+LIMITS
+These are desktop-browser responsive checks, not exhaustive real-device or assistive-technology certification. Two final films were subsequently added using Jarrell's Google Flow clips; see films/EDIT-NOTES.txt and process/film-verification.json. The files are local; no public deployment or public portfolio-site integration was performed.
+
+AUTHORSHIP
+Website design and implementation were produced with ChatGPT/Codex at Jarrell's request. Existing AI-generated product and campaign images were reused. No new product photographs or video were generated for this redesign.

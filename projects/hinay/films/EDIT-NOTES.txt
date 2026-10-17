@@ -1,0 +1,23 @@
+HINAY — FINAL VIDEO EDITS
+
+01-hinay-muna-15s.mp4
+0–6s: arrival source, 1.5–7.5s.
+6–9s: water source, 1.3–4.3s.
+9–13s: corrected product source, 2–6s.
+13–15s: HINAY closing card.
+
+02-meet-daily-reset-10s.mp4
+0–8s: full corrected product clip.
+8–10s: Daily Reset closing card.
+
+EXPORT
+720 x 1280, vertical 9:16, 24fps, H.264 MP4, AAC stereo, web fast-start. Native footage resolution preserved; no claimed 1080p detail.
+
+AUDIO
+Source audio retained with short edge fades. End cards are silent. No music or voiceover was added. Audio content has not been independently listened to; preview it before publishing.
+
+CREDIT
+Jarrell generated the supplied clips in Google Flow. ChatGPT/Codex reviewed sampled frames, assembled the edits, added campaign typography/disclosures and end cards, and prepared local website integration. Packaging matching remains approximate.
+
+STATUS
+The two edited MP4 files exist and have been decoded end to end without reported decoder errors. Nothing has been published externally.

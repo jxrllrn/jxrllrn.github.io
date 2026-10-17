@@ -1,0 +1,40 @@
+HINAY — PRODUCTION NOTES
+
+DELIVERY STATUS
+The static campaign, brand assets, copy and local portfolio presentation are complete. Two edited videos have now been added from Jarrell's Google Flow footage: a 15-second evening story and a 10-second product film. See films/EDIT-NOTES.txt for the actual workflow and process/film-verification.json for checks. Nothing has been published to a public website or social account. The original static-delivery inventory and workflow below are retained as a record.
+
+INVENTORY
+3 original product photographs, PNG.
+3 portrait advertisements, 1080 x 1350, PNG and SVG.
+5 carousel panels, 1080 x 1350, PNG and SVG.
+3 wordmark variants: cream, forest, transparent; 1600 x 720, PNG and SVG.
+1 front-label concept, 720 x 1100, PNG and SVG.
+1 brand board, 1600 x 2200, PNG and SVG.
+1 portfolio cover, 1600 x 1000, PNG and SVG.
+1 campaign contact sheet, 1216 x 764, PNG.
+2 vertical end cards, 1080 x 1920, PNG and SVG. These are still images, not videos.
+4 responsive HTML pages: gallery, brand guide, case study and process.
+Copy file, exact image-generation prompts, video handoff and verification record.
+DM Sans font with its SIL Open Font License.
+
+ACTUAL WORKFLOW
+1. The previously agreed brand brief was translated into one master bottle photograph using built-in image generation.
+2. The master photograph was supplied as the image reference for a bathroom scene and a product detail scene.
+3. Text, shapes and layout were composed as SVG artwork with embedded image and font data.
+4. A browser rendered the artwork into individual PNG files. The transparent wordmark preserves alpha.
+5. A local HTML gallery and case study were prepared. Desktop/mobile layouts, image loading, asset links and PNG dimensions were checked.
+
+QUALITY REVIEW
+The original images, contact sheet, brand board, portfolio cover and narrow-screen gallery were visually reviewed. A first pass found a text colour precedence issue on forest layouts; it was corrected and the affected layouts were re-exported. Final text bounds were checked during export. Verification records list the actual checks; they are not a broad accessibility certification.
+
+EDITABILITY
+The raster product images contain generated label text. They are not layered product renders, PSD files or Canva documents. Separate SVG files preserve campaign text and graphic elements. SVG text import depends on the editor and font support. A separate editable front-label concept is included, but it is not an exact vector reconstruction of the generated bottle label.
+
+PROVENANCE AND CREDIT
+Built-in image generation was used for the three product photographs. No paid API was configured. No photos were retouched in Photoshop, and no Canva work was performed. ChatGPT/Codex produced the strategy, copy, image prompts, layout sources and exports at Jarrell's request. Credit Jarrell's actual later review, edits and video production when completed. Do not invent failed attempts, client work, sales results or audience research.
+
+CREATIVE LIMITATIONS
+Bottle-label spacing and pump geometry may vary subtly between generated photographs. This is acceptable for reviewing a fictional portfolio concept but requires closer matching before any real product advertising. The brand name is not commercially cleared. The product is fictional; no tested formula, ingredient list, manufacturing specifications, clinical results, regulatory compliance, retail price or efficacy is represented.
+
+REMAINING USER WORK
+Review the campaign and final videos with sound, make any desired creative revisions, record your actual contribution and learning, then publish the selected portfolio material when ready.

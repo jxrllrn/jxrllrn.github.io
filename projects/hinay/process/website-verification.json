@@ -1,0 +1,96 @@
+{
+  "viewports": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "broken": [],
+      "heroBounds": {
+        "copyRight": 700.75,
+        "imageLeft": 751.5625
+      }
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "scrollWidth": 1920,
+      "broken": [],
+      "heroBounds": {
+        "copyRight": 931.203125,
+        "imageLeft": 1024.390625
+      }
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "scrollWidth": 1024,
+      "broken": [],
+      "heroBounds": {
+        "copyRight": 547.40625,
+        "imageLeft": 588.359375
+      }
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "scrollWidth": 768,
+      "broken": [],
+      "heroBounds": {
+        "copyRight": 402.3125,
+        "imageLeft": 433.03125
+      }
+    },
+    {
+      "width": 760,
+      "overflow": false,
+      "scrollWidth": 760,
+      "broken": [],
+      "heroBounds": {
+        "copyRight": 736,
+        "imageLeft": 160
+      }
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "scrollWidth": 390,
+      "broken": [],
+      "heroBounds": {
+        "copyRight": 366,
+        "imageLeft": 41.09375
+      }
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "scrollWidth": 320,
+      "broken": [],
+      "heroBounds": {
+        "copyRight": 296,
+        "imageLeft": 37.59375
+      }
+    }
+  ],
+  "interactions": [
+    "All three product scenes",
+    "All three ritual chapters",
+    "ads: all 3 artwork viewers, downloads and focus return",
+    "carousel: all 5 artwork viewers, downloads and focus return",
+    "product: all 3 artwork viewers, downloads and focus return",
+    "Viewer arrow keys, wrapping and close button",
+    "FAQ open and close",
+    "Mobile menu open, anchor navigation and Escape",
+    "Mobile artwork viewer fits width",
+    "Reduced-motion preference"
+  ],
+  "errors": [],
+  "missingLinks": [],
+  "ticker": {
+    "identical": true,
+    "widths": [
+      1440,
+      1440.0001220703125
+    ],
+    "total": 2880
+  }
+}

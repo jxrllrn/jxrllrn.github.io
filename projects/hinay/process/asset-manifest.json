@@ -1,0 +1,113 @@
+{
+  "brand": "HINAY",
+  "fictional": true,
+  "generatedAt": "2026-10-17T03:11:29.584Z",
+  "videosCreated": true,
+  "films": [
+    {"file":"films/01-hinay-muna-15s.mp4","durationSeconds":15,"width":720,"height":1280,"fps":24},
+    {"file":"films/02-meet-daily-reset-10s.mp4","durationSeconds":10,"width":720,"height":1280,"fps":24}
+  ],
+  "assets": [
+    {
+      "file": "ads/01-hinay-muna.png",
+      "editable": "editable/ads/01-hinay-muna.svg",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "ads/02-little-pause.png",
+      "editable": "editable/ads/02-little-pause.svg",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "ads/03-meet-daily-reset.png",
+      "editable": "editable/ads/03-meet-daily-reset.svg",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "carousel/01-long-day.png",
+      "editable": "editable/carousel/01-long-day.svg",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "carousel/02-put-things-down.png",
+      "editable": "editable/carousel/02-put-things-down.svg",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "carousel/03-wash-up.png",
+      "editable": "editable/carousel/03-wash-up.svg",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "carousel/04-hinay-muna.png",
+      "editable": "editable/carousel/04-hinay-muna.svg",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "carousel/05-product-reveal.png",
+      "editable": "editable/carousel/05-product-reveal.svg",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "brand/wordmark-cream.png",
+      "editable": "editable/brand/wordmark-cream.svg",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "file": "brand/wordmark-forest.png",
+      "editable": "editable/brand/wordmark-forest.svg",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "file": "brand/wordmark-transparent.png",
+      "editable": "editable/brand/wordmark-transparent.svg",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "file": "brand/front-label-concept.png",
+      "editable": "editable/brand/front-label-concept.svg",
+      "width": 720,
+      "height": 1100
+    },
+    {
+      "file": "brand/brand-board.png",
+      "editable": "editable/brand/brand-board.svg",
+      "width": 1600,
+      "height": 2200
+    },
+    {
+      "file": "portfolio/project-cover.png",
+      "editable": "editable/portfolio/project-cover.svg",
+      "width": 1600,
+      "height": 1000
+    },
+    {
+      "file": "video-handoff/01-end-card.png",
+      "editable": "editable/video-handoff/01-end-card.svg",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "file": "video-handoff/02-end-card.png",
+      "editable": "editable/video-handoff/02-end-card.svg",
+      "width": 1080,
+      "height": 1920
+    }
+  ],
+  "productImages": [
+    "product-images/01-hero.png",
+    "product-images/02-evening-ritual.png",
+    "product-images/03-packaging-detail.png"
+  ]
+}

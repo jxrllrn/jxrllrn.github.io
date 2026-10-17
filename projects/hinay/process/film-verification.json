@@ -1,0 +1,56 @@
+{
+  "films": [
+    {
+      "file": "01-hinay-muna-15s.mp4",
+      "duration": 15,
+      "width": 720,
+      "height": 1280,
+      "bytes": 3584086,
+      "sampledTimes": [
+        0.5,
+        5,
+        7.5,
+        10.5,
+        13.5,
+        14.8
+      ]
+    },
+    {
+      "file": "02-meet-daily-reset-10s.mp4",
+      "duration": 10,
+      "width": 720,
+      "height": 1280,
+      "bytes": 1525296,
+      "sampledTimes": [
+        0.5,
+        3,
+        5,
+        7.5,
+        8.5,
+        9.8
+      ]
+    }
+  ],
+  "website": [
+    {
+      "width": 1440,
+      "videoPlayback": true,
+      "controls": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "videoPlayback": true,
+      "controls": true,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "videoPlayback": true,
+      "controls": true,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "audioContentReviewed": false
+}

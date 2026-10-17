@@ -1,0 +1,137 @@
+{
+  "htmlPages": [
+    {
+      "page": "index.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "page": "brand-guide.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "page": "brand-guide.html",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "page": "case-study.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "page": "case-study.html",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "page": "process.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    {
+      "page": "process.html",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    }
+  ],
+  "exports": [
+    {
+      "file": "ads/01-hinay-muna.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "ads/02-little-pause.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "ads/03-meet-daily-reset.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "carousel/01-long-day.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "carousel/02-put-things-down.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "carousel/03-wash-up.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "carousel/04-hinay-muna.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "carousel/05-product-reveal.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "brand/wordmark-cream.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "file": "brand/wordmark-forest.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "file": "brand/wordmark-transparent.png",
+      "width": 1600,
+      "height": 720
+    },
+    {
+      "file": "brand/front-label-concept.png",
+      "width": 720,
+      "height": 1100
+    },
+    {
+      "file": "brand/brand-board.png",
+      "width": 1600,
+      "height": 2200
+    },
+    {
+      "file": "portfolio/project-cover.png",
+      "width": 1600,
+      "height": 1000
+    },
+    {
+      "file": "video-handoff/01-end-card.png",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "file": "video-handoff/02-end-card.png",
+      "width": 1080,
+      "height": 1920
+    }
+  ],
+  "missingLinks": [],
+  "issues": [],
+  "transparentWordmark": true
+}
