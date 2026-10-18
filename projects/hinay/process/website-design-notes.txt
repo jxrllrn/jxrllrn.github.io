@@ -1,4 +1,4 @@
-HINAY — WEBSITE DESIGN, VERSION 2
+HINAY: WEBSITE DESIGN, VERSION 2
 
 PURPOSE
 The homepage is a fictional brand microsite and portfolio showcase. It introduces the brand, presents its product and campaign, and lets a prospective client inspect the creative work and process. It is not a working skincare store. No product checkout, subscription, data collection or customer claims have been added.

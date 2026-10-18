@@ -1,4 +1,4 @@
-# Timpla Café — Portfolio Project #1
+# Timpla Café: Portfolio Project #1
 
 ## Temporary café name
 
@@ -11,11 +11,11 @@ Tagline: **Coffee made for your kind of day.**
 
 ### Primary audience
 
-Students and Gen Z customers, roughly 16–24, who want an affordable and aesthetically pleasing place to study, meet friends, relax, and create social-media content. They value reliable Wi-Fi, charging outlets, comfortable seating, photogenic drinks, and prices that feel accessible.
+Students and Gen Z customers, roughly 16 to 24, who want an affordable and aesthetically pleasing place to study, meet friends, relax, and create social-media content. They value reliable Wi-Fi, charging outlets, comfortable seating, photogenic drinks, and prices that feel accessible.
 
 ### Secondary audience
 
-Young professionals and adults, roughly 25–40, who need a welcoming place for casual meetings, remote work, coffee breaks, and weekend catch-ups.
+Young professionals and adults, roughly 25 to 40, who need a welcoming place for casual meetings, remote work, coffee breaks, and weekend catch-ups.
 
 ### Brand promise
 
@@ -25,17 +25,17 @@ Timpla is the neighborhood “third place” between home and school or work: re
 
 ### Two core colors
 
-- **Deep Espresso — `#482B1B`**: warm, grounded, mature, and strongly associated with coffee.
-- **Warm Cream — `#FFF7E8`**: soft, bright, welcoming, and ideal for an airy mobile interface.
+- **Deep Espresso: `#482B1B`**: warm, grounded, mature, and strongly associated with coffee.
+- **Warm Cream: `#FFF7E8`**: soft, bright, welcoming, and ideal for an airy mobile interface.
 
 Supporting tints may be derived from these colors for borders, backgrounds, and states. Menu illustrations use small flavor-specific accent colors while the brand identity remains anchored to the two core colors.
 
 ### Fonts
 
-- **Fraunces** — headings, statements, and the wordmark. It gives the brand an editorial, expressive, slightly nostalgic personality.
-- **DM Sans** — body copy, navigation, prices, forms, and buttons. It stays highly readable on small screens.
+- **Fraunces**: headings, statements, and the wordmark. It gives the brand an editorial, expressive, slightly nostalgic personality.
+- **DM Sans**: body copy, navigation, prices, forms, and buttons. It stays highly readable on small screens.
 
-## Fictional menu — 12 products
+## Fictional menu: 12 products
 
 | Product | Description | Price |
 |---|---|---:|
@@ -103,9 +103,9 @@ Supporting tints may be derived from these colors for borders, backgrounds, and 
 
 ## Reference websites
 
-1. [Yardstick Coffee](https://yardstickcoffee.com/) — Philippine specialty-coffee positioning and product-led storytelling.
-2. [Commune Café + Bar](https://commune.ph/) — distinctly Filipino coffee identity and locally grounded content.
-3. [Common Man Coffee Roasters](https://commonmancoffeeroasters.com/) — warm editorial presentation, clear café storytelling, and strong information hierarchy.
+1. [Yardstick Coffee](https://yardstickcoffee.com/): Philippine specialty-coffee positioning and product-led storytelling.
+2. [Commune Café + Bar](https://commune.ph/): distinctly Filipino coffee identity and locally grounded content.
+3. [Common Man Coffee Roasters](https://commonmancoffeeroasters.com/): warm editorial presentation, clear café storytelling, and strong information hierarchy.
 
 These references guide mood and content strategy only. Timpla’s visual identity, copy, menu, and implementation are original.
 
@@ -113,7 +113,7 @@ These references guide mood and content strategy only. Timpla’s visual identit
 
 The project is finished when:
 
-- All four screens—Home, Menu, Cart, and Contact—work on mobile and desktop.
+- All four screens, Home, Menu, Cart, and Contact, work on mobile and desktop.
 - The full 12-item fictional menu is visible and filterable.
 - Customers can add products, adjust quantities, and see correct totals.
 - The cart persists after a browser refresh.

@@ -180,9 +180,9 @@ function createOrderSummary() {
   const fee = subtotal ? 15 : 0;
   const lines = entries.map(([id, quantity]) => {
     const item = products.find(product => product.id === id);
-    return `${quantity}× ${item.name} — ${peso(item.price * quantity)}`;
+    return `${quantity}× ${item.name}: ${peso(item.price * quantity)}`;
   });
-  return [`Timpla Café — Demo Order`, "", ...lines, "", `Subtotal: ${peso(subtotal)}`, `Service fee: ${peso(fee)}`, `Total: ${peso(subtotal + fee)}`].join("\n");
+  return [`Timpla Café: Demo Order`, "", ...lines, "", `Subtotal: ${peso(subtotal)}`, `Service fee: ${peso(fee)}`, `Total: ${peso(subtotal + fee)}`].join("\n");
 }
 
 document.querySelector("#checkout-button").addEventListener("click", () => {
@@ -195,14 +195,14 @@ document.querySelector("#copy-order").addEventListener("click", async () => {
     await navigator.clipboard.writeText(document.querySelector("#order-text").textContent);
     showToast("Order summary copied");
   } catch {
-    showToast("Copy unavailable—select the summary manually");
+    showToast("Copy unavailable, select the summary manually");
   }
 });
 
 document.querySelector("#contact-form").addEventListener("submit", event => {
   event.preventDefault();
   event.currentTarget.reset();
-  showToast("Demo validated—no message was sent");
+  showToast("Demo validated, no message was sent");
 });
 window.addEventListener("hashchange", route);
 

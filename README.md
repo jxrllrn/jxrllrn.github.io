@@ -1,6 +1,6 @@
-# Jarrell Arante — Portfolio
+# Jarrell Arante: Portfolio
 
-A responsive personal portfolio presenting Jarrell as a creative developer and designer: a first-year BSCS–AI student with experience in graphic design, publication layouts, and building websites and web applications.
+A responsive personal portfolio presenting Jarrell as a creative developer and designer: a first-year BSCS-AI student with experience in graphic design, publication layouts, and building websites and web applications.
 
 ## Run locally
 
@@ -19,10 +19,10 @@ Open `index.html` in a browser, or serve this folder with any static server.
 
 ## Live project
 
-- HINAY: https://jxrllrn.github.io/projects/hinay/ — a fictional skincare brand microsite, static campaign, and two edited Google Flow films. Brand assets and the case study are included in `projects/hinay/`. Product images and video clips are AI-generated.
+- HINAY: https://jxrllrn.github.io/projects/hinay/: a fictional skincare brand microsite, static campaign, and two edited Google Flow films. Brand assets and the case study are included in `projects/hinay/`. Product images and video clips are AI-generated.
 
 - Timpla Café: https://timpla-cafe-six.vercel.app/
-- PocketPlan case study: https://jxrllrn.github.io/projects/pocketplan/ — personal project in development, with an optional link to the existing public app at https://pocketplan-gilt.vercel.app/. Choose Explore the demo to use sample records without sign-in.
+- PocketPlan case study: https://jxrllrn.github.io/projects/pocketplan/: personal project in development, with an optional link to the existing public app at https://pocketplan-gilt.vercel.app/. Choose Explore the demo to use sample records without sign-in.
 
 ## Before publishing
 

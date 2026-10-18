@@ -1,8 +1,8 @@
-HINAY — PROJECT 02 DELIVERY
+HINAY: PROJECT 02 DELIVERY
 
 START: Open index.html in a browser to browse everything locally. Keep the folder structure intact.
 
-WEBSITE REDESIGN — VERSION 2
+WEBSITE REDESIGN: VERSION 2
 index.html is now the HINAY brand microsite: product exploration, an interactive evening story, filterable campaign artwork, a keyboard-accessible image viewer, project resources and FAQ.
 campaign-kit.html preserves the complete original download gallery.
 studio.css and studio.js contain the new homepage design and interactions. campaign.css styles the supporting documents.

@@ -1,4 +1,4 @@
-HINAY — VIDEO PRODUCTION HANDOFF
+HINAY: VIDEO PRODUCTION HANDOFF
 
 STATUS UPDATE: Two edited films are now available in films/. Jarrell generated the footage in Google Flow; the final edits include campaign typography and end cards. Read films/EDIT-NOTES.txt for the actual edit decisions. The following material preserves the original production brief; it is not the final edit timeline.
 
@@ -7,34 +7,34 @@ For future generations, use product-images/01-hero.png as the master product ref
 MASTER LOOK
 Warm cream #F5F1E8, forest #243D32, sage #A8B5A0. Natural light, quiet everyday spaces, steady simple camera movement, realistic materials. DM Sans typography.
 
-VIDEO 1 — AFTER A LONG DAY
+VIDEO 1: AFTER A LONG DAY
 Length: 15 seconds. Canvas: 1080 × 1920, 9:16.
-0–3s: A plain student bag and keys are placed gently on a cream table. No logos. Text: Mahaba ang araw?
-3–6s: Cut to the bathroom product scene. Use 02-evening-ritual.png. Slow push-in, bottle remains completely stable.
-6–10s: Cut to running tap water and hands; no face required. Text: Take a little pause.
-10–13s: Close view of the master bottle on its tray. Preserve label and shape.
-13–15s: Forest end card with cream HINAY wordmark. Text: Hinay muna.
+0 to 3s: A plain student bag and keys are placed gently on a cream table. No logos. Text: Mahaba ang araw?
+3 to 6s: Cut to the bathroom product scene. Use 02-evening-ritual.png. Slow push-in, bottle remains completely stable.
+6 to 10s: Cut to running tap water and hands; no face required. Text: Take a little pause.
+10 to 13s: Close view of the master bottle on its tray. Preserve label and shape.
+13 to 15s: Forest end card with cream HINAY wordmark. Text: Hinay muna.
 Optional voiceover: Mahaba ang araw. Take a little pause. HINAY. A daily reset.
 Audio: soft keys, tap water, restrained original or properly licensed ambient music.
 
 SHOT PROMPT 1A
 Vertical naturalistic editorial video, 3 seconds: a plain canvas student bag and house keys being set down gently on a warm cream table after a busy day, warm evening light, calm static camera, realistic hands if visible, no text or visible logos.
 
-SHOT PROMPT 1B — WITH 02-EVENING-RITUAL REFERENCE
+SHOT PROMPT 1B: WITH 02-EVENING-RITUAL REFERENCE
 Vertical editorial product video, 3 seconds: preserve the supplied HINAY bottle and every label detail, subtle slow push-in across an ivory towel and ceramic tray in a warmly lit cream-tile bathroom, no bottle rotation, no pump movement, no changing text or geometry, realistic light.
 
 SHOT PROMPT 1C
 Vertical close-up video, 4 seconds: hands beneath a gently running bathroom tap, cream tiles and soft warm light, natural simple hand movement, no product application or visible skin transformation, no text or extra fingers.
 
-SHOT PROMPT 1D — WITH 03-PACKAGING-DETAIL REFERENCE
+SHOT PROMPT 1D: WITH 03-PACKAGING-DETAIL REFERENCE
 Vertical editorial product video, 3 seconds: preserve exact supplied HINAY product and label, extremely subtle forward camera movement, soft light and shallow depth of field, no bottle deformation, no new objects, no added text.
 
-VIDEO 2 — MEET DAILY RESET
+VIDEO 2: MEET DAILY RESET
 Length: 10 seconds. Canvas: 1080 × 1920.
-0–3s: Close detail of sage pump. Reference 03-packaging-detail.png.
-3–6s: Gentle camera slide across the label; readable HINAY, no letter morphing.
-6–8s: Full bottle reveal using 01-hero.png.
-8–10s: End card: Meet Daily Reset. / A little pause. A daily reset.
+0 to 3s: Close detail of sage pump. Reference 03-packaging-detail.png.
+3 to 6s: Gentle camera slide across the label; readable HINAY, no letter morphing.
+6 to 8s: Full bottle reveal using 01-hero.png.
+8 to 10s: End card: Meet Daily Reset. / A little pause. A daily reset.
 Optional voiceover: Meet Daily Reset. A little pause. A daily reset.
 
 VIDEO 2 GENERATION PROMPT

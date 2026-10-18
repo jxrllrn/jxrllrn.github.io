@@ -1,4 +1,4 @@
-# Timpla Café — Project #1 Review
+# Timpla Café: Project #1 Review
 
 Reviewed against the agreed mobile-first small-business café website requirements.
 
@@ -36,7 +36,7 @@ These limitations are appropriate for a fictional portfolio demonstration and sh
 3. Test the public URL on a real phone and desktop browser.
 4. Add the real deployed URL to this README.
 5. Capture three screenshots: desktop hero, mobile menu, and mobile order review.
-6. Record a 45–60 second walkthrough.
+6. Record a 45 to 60 second walkthrough.
 7. Write a short case study covering the problem, audience, process, challenges, solution, and lessons learned.
 8. Add the case study and live link to the portfolio website.
 

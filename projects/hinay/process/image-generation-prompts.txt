@@ -1,16 +1,16 @@
-HINAY — EXACT IMAGE GENERATION PROMPTS
+HINAY: EXACT IMAGE GENERATION PROMPTS
 
 MODE
 Built-in image generation. No paid API or external image service was configured.
 
-01 — MASTER HERO
+01: MASTER HERO
 Use case: product-mockup. Generate one premium photorealistic square editorial product photograph for fictional Filipino skincare brand HINAY. Single opaque warm ivory cylindrical 120mL bottle, muted sage green pump with short nozzle pointing left, no cap, subtly rounded shoulders and base, perfectly straight-on readable deep forest green label. Exact label: HINAY (large uppercase spaced sans serif), DAILY RESET, FACIAL CLEANSER, 120 mL. Small thin ripple curve beneath HINAY. Product fills about 65% image height centered, grounded on warm cream plaster surface, warm cream background #F5F1E8, soft natural afternoon light from upper left with long delicate shadow toward right. Quiet authentic minimal luxury, realistic matte polymer and print, accurate photographic detail. No external headline, no other bottles, no ingredients, no efficacy claims, no hands, no unrelated objects, no watermark. This is the master bottle reference for a consistent campaign.
 
-02 — EVENING RITUAL
+02: EVENING RITUAL
 Input reference: product-images/01-hero.png (original generated master).
 Use case: product-mockup. Input image is the MASTER PRODUCT REFERENCE: preserve the exact HINAY Daily Reset bottle geometry, proportions, ivory material, sage pump nozzle pointing left, and dark green label wording HINAY / DAILY RESET / FACIAL CLEANSER / 120 mL. Generate a new square premium editorial photograph of that same single bottle at home on a cream tiled bathroom counter, folded ivory cotton towel to its left, understated low ceramic tray beneath bottle, softly out-of-focus warm cream tiled wall and a small mirror edge in background. Bottle front label faces camera, bottle occupies 58% of image height and is slightly right of centre. Warm evening window light, natural believable shadows, realistic tactile surfaces. Quiet Filipino young-adult end-of-day ritual mood without people. No extra text or headline. No claims, ingredients, flowers, extra bottles, watermarks, price or badges. Maintain exact bottle and label consistency with supplied reference.
 
-03 — PACKAGING DETAIL
+03: PACKAGING DETAIL
 Input reference: product-images/01-hero.png (original generated master).
 Use case: product-mockup. Input image is the master HINAY product reference; preserve bottle geometry, proportions, ivory material, sage pump nozzle pointing left, deep forest label HINAY / DAILY RESET / FACIAL CLEANSER / 120 mL and ripple mark exactly. Create a new square photorealistic product detail photograph: camera a little closer than master, bottle positioned on the right half, full pump and most body visible with bottom gently outside frame, in-focus HINAY label and tactile matte plastic, warm cream stone backdrop, subtle water droplets on nearby counter only. Natural soft raking side light, more neutral cream and sage than golden, restrained premium editorial skincare photography, generous clean left third. Only one bottle. No flowers, hands, extra text, badges, efficacy claims, ingredients, or watermarks.
 
