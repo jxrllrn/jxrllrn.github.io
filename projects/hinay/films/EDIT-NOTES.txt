@@ -17,7 +17,7 @@ AUDIO
 Source audio retained with short edge fades. End cards are silent. No music or voiceover was added. Audio content has not been independently listened to; preview it before publishing.
 
 CREDIT
-Jarrell generated the supplied clips in Google Flow. ChatGPT/Codex reviewed sampled frames, assembled the edits, added campaign typography/disclosures and end cards, and prepared local website integration. Packaging matching remains approximate.
+Jarrell generated the supplied clips in Google Flow. The final edits combine selected footage, campaign typography and closing cards. Packaging matching remains approximate.
 
 STATUS
 The two edited MP4 files exist and have been decoded end to end without reported decoder errors. Nothing has been published externally.

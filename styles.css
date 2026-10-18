@@ -114,6 +114,11 @@ h1,h2,h3,strong { font-family: Manrope,sans-serif; }
 
 .featured-project { min-height: 570px; display: grid; grid-template-columns: 1.15fr .85fr; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .hinay-featured { margin-top: 22px; }
+.pocketplan-featured { margin-top: 22px; }
+.pocketplan-featured .featured-image { background: #e9efdf; display: flex; align-items: center; padding: 28px 20px; }
+.pocketplan-featured .featured-image img { height: auto; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 50px rgba(24,45,30,.18); }
+.pocketplan-featured .featured-image::after { background: linear-gradient(180deg,transparent 85%,rgba(11,13,15,.15)); }
+.pocketplan-featured .featured-copy > .project-credit { font-size: 11px; line-height: 1.8; margin-bottom: 20px; }
 .hinay-featured .featured-image { background: #f5f1e8; display: flex; align-items: center; }
 .hinay-featured .featured-image img { height: auto; object-fit: contain; }
 .hinay-featured .featured-image::after { background: linear-gradient(180deg,transparent 80%,rgba(11,13,15,.25)); }
@@ -141,6 +146,7 @@ h1,h2,h3,strong { font-family: Manrope,sans-serif; }
 .text-link { width: fit-content; color: var(--acid); font-size: 13px; font-weight: 700; text-decoration: none; border-bottom: 1px solid currentColor; }
 .text-link.muted { color: var(--muted); }
 .project-grid { margin-top: 18px; display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; }
+@media (min-width: 1051px) { .project-grid { grid-template-columns: repeat(3,minmax(0,1fr)); } }
 .project-card { padding: 0; overflow: hidden; color: var(--paper); border: 1px solid var(--line); border-radius: 22px; background: var(--surface); cursor: pointer; text-align: left; transition: transform .35s var(--ease),border-color .3s ease; }
 .project-card:hover { transform: translateY(-6px); border-color: var(--line-strong); }
 .project-media { height: 300px; position: relative; display: block; overflow: hidden; background: #222; }

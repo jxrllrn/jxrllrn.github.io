@@ -29,4 +29,4 @@ LIMITS
 These are desktop-browser responsive checks, not exhaustive real-device or assistive-technology certification. Two final films were subsequently added using Jarrell's Google Flow clips; see films/EDIT-NOTES.txt and process/film-verification.json. The files are local; no public deployment or public portfolio-site integration was performed.
 
 AUTHORSHIP
-Website design and implementation were produced with ChatGPT/Codex at Jarrell's request. Existing AI-generated product and campaign images were reused. No new product photographs or video were generated for this redesign.
+The website presents Jarrell's fictional brand campaign. Existing AI-generated product images and Google Flow videos are used throughout the experience.

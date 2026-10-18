@@ -31,7 +31,7 @@ EDITABILITY
 The raster product images contain generated label text. They are not layered product renders, PSD files or Canva documents. Separate SVG files preserve campaign text and graphic elements. SVG text import depends on the editor and font support. A separate editable front-label concept is included, but it is not an exact vector reconstruction of the generated bottle label.
 
 PROVENANCE AND CREDIT
-Built-in image generation was used for the three product photographs. No paid API was configured. No photos were retouched in Photoshop, and no Canva work was performed. ChatGPT/Codex produced the strategy, copy, image prompts, layout sources and exports at Jarrell's request. Credit Jarrell's actual later review, edits and video production when completed. Do not invent failed attempts, client work, sales results or audience research.
+Built-in image generation was used for the three product photographs. No paid API was configured. No photos were retouched in Photoshop, and no Canva work was performed. The campaign follows a defined brief, master product reference, scene variations, separately composed layouts and exported assets. No client work, sales results or audience research are claimed.
 
 CREATIVE LIMITATIONS
 Bottle-label spacing and pump geometry may vary subtly between generated photographs. This is acceptable for reviewing a fictional portfolio concept but requires closer matching before any real product advertising. The brand name is not commercially cleared. The product is fictional; no tested formula, ingredient list, manufacturing specifications, clinical results, regulatory compliance, retail price or efficacy is represented.

@@ -1,6 +1,6 @@
 HINAY — VIDEO PRODUCTION HANDOFF
 
-STATUS UPDATE: Two edited films are now available in films/. Jarrell generated the footage in Google Flow; ChatGPT/Codex assembled the final edits and added typography and end cards. Read films/EDIT-NOTES.txt for the actual edit decisions. The following material preserves the original production brief; it is not the final edit timeline.
+STATUS UPDATE: Two edited films are now available in films/. Jarrell generated the footage in Google Flow; the final edits include campaign typography and end cards. Read films/EDIT-NOTES.txt for the actual edit decisions. The following material preserves the original production brief; it is not the final edit timeline.
 
 For future generations, use product-images/01-hero.png as the master product reference. Maintain the same opaque ivory 120 mL bottle, muted sage pump facing left, forest lettering and bottle proportions. Add campaign typography in the editor for reliable spelling.
 
@@ -41,7 +41,7 @@ VIDEO 2 GENERATION PROMPT
 Create a restrained vertical product film using the supplied HINAY master reference. Show a sage pump detail, label detail and full ivory bottle reveal in warm cream studio light. Preserve exactly one bottle, its proportions and every label character. Very small camera movements only. No pouring, opening, bending, transforming, invented ingredients or efficacy text. Generate shots separately if consistency fails. Add all campaign typography afterward in the editor.
 
 EDITING AND EXPORT
-Keep important text at least 120px from the sides, 250px from the top and 320px from the bottom as a conservative starting guide, then preview in the destination app because overlays vary. Render final 1080 × 1920 MP4, H.264, 24 or 30fps. Add captions for any voiceover. End cards should remain readable for about 2 seconds. Label the published post Fictional brand campaign; AI-assisted imagery/video. Do not publish a shopping link or invented price.
+Keep important text at least 120px from the sides, 250px from the top and 320px from the bottom as a conservative starting guide, then preview in the destination app because overlays vary. Render final 1080 × 1920 MP4, H.264, 24 or 30fps. Add captions for any voiceover. End cards should remain readable for about 2 seconds. Label the published post Fictional brand campaign; AI-generated images/video. Do not publish a shopping link or invented price.
 
 SOUND RIGHTS
 No music or voiceover files are supplied. Use audio you created or have permission to publish; a tool's free tier is not itself proof of commercial audio rights.

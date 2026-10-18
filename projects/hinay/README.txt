@@ -28,7 +28,7 @@ IMPORT TO CANVA/PHOTOSHOP
 PNG exports can be imported directly. This does not make their text layers editable. SVG import fidelity varies; use an SVG-capable editor for text changes. No native PSD or Canva document was created.
 
 CREDIT
-Prepared with ChatGPT/Codex and built-in image generation at Jarrell's request. Credit your own review and edits when actually completed. Do not claim real client work or measured sales results.
+Personal portfolio concept. Product images and video clips are AI-generated. No client work or measured sales results are claimed.
 
 LIMITS
 Fictional brand. No product is sold. Name not trademark-cleared. No tested formulation, skincare benefits, ingredients or regulatory packaging are implied. AI bottle-label variations are approximate. No Photoshop retouching is claimed. The two videos are edited from Jarrell's supplied Google Flow clips. Source sound is retained and should be previewed before posting; no music or voiceover was added. No files were published to social media or your public portfolio site.
